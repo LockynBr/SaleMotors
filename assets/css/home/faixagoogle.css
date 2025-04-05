@@ -1,35 +1,39 @@
 @import "/assets/css/style.css";
 
-section#faixa-google-patern 
-div#container-faixa-google {
-  height: 142px;
+#faixa-google-partner {
   background: linear-gradient(to right, #10133B, #1E2060);
+  display: flex;
+  justify-content: center;
 }
 
-section#faixa-google-patern 
-div#container-faixa-google
-img {
-  display: block;
+.container-faixa-google {
+  display: flex;
+  height: 142px;
+  box-sizing: border-box;
+}
+
+.container-faixa-google img {
   width: 94px;
-  position: absolute;
-  top: 23px;
-  left: 73px;
 }
 
-section#faixa-google-patern 
-div#container-faixa-google
-h3 {
+.container-texto {
   display: flex;
   color: white;
+  align-items: center;
+}
+
+.container-texto h3 {
+  width: 360px;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px 90px;
   font-family: 'Mulish', sans-serif;
-  margin: auto;
 }
 
-section#faixa-google-patern 
-div#container-faixa-google
-p {
-  color: white;
+.container-texto p {
+  width: 430px;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  text-align: justify;
 }
-
-
