@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  cursor: grab;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  padding: 20px 0;
+  will-change: transform;
+}
+
+.carousel-track img {
+  height: 60px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.carousel-container.dragging {
+  cursor: grabbing;
+}
