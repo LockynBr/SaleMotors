@@ -43,6 +43,7 @@ export function initMenuMobile(){
     let touchStart = false
     function openMenu(event){
         if (event.type === 'touchstart') {
+            event.preventDefault()
             touchStart = true;
           }
         
