@@ -1,0 +1,223 @@
+.navbar {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin: 20px 50px;
+    border-radius: 20px;
+  }
+
+  .no-hover > a:hover::after{
+    width: 0 !important;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 32px;
+  }
+
+  .logo img{
+    width: 250px;
+    margin-left: 32px;
+  }
+  
+  
+  .menu a {
+    display: inline-block;
+    padding: 16px 0;
+    font-family: 'Mulish';
+    text-decoration: none;
+    color: #0b0d3e;
+    font-size: 18px;
+    margin-right: 16px;
+    position: relative;
+  }
+
+  .menu a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: #0b0d3e;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+  }
+
+  .menu a:hover::after,
+  .menu a.ativo:hover::after{
+    width: 100%;    
+  }
+
+  [data-dropdown]{
+    position: relative;
+  }
+
+  [data-dropdown] .dropdown-menu{
+    display: none;
+  }
+
+  [data-dropdown]:hover .dropdown-menu,
+  [data-dropdown].active .dropdown-menu{
+    display: block;
+    animation: showUp .3s forwards;
+  }
+
+  @keyframes showUp{
+    from{
+      opacity: 0;
+      transform: translate3d(0, 30px, 0);
+    }
+    to{
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .dropdown-menu{
+    padding: 20px;
+    top: 49px;
+    position: absolute;
+    background: #24294E;
+    border: 2px solid #000;
+    z-index: 200;
+    width: max-content;
+    border-radius: 5px;
+  }
+  .img-disable{
+    display: none;
+  }
+
+  .dropdown-menu::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #24294E;
+
+  }
+
+  .dropdown-menu li a{
+    color: #fff;
+  }
+
+  .dropdown-menu li a:hover::after{
+    background-color: #fff;
+  }
+
+  [data-menu="button"]{
+    display: none;
+  }
+
+  #img-mb{
+    display: none;
+  }
+
+  @keyframes show-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 900px){
+    .navbar {
+      margin: 0px;
+      border-radius: 0px;
+    }
+    [data-menu="button"]{
+      display: flex;
+      align-items: center;
+      background-color: #222;
+      border: none;
+      padding: .5rem 1rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-family: "Mulish", sans-serif;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      margin: 10px;
+      position: relative;
+      z-index: 300;
+    }
+    [data-menu="button"].active::before{
+      transform: rotate(90deg);
+    }
+    [data-menu="button"]::before{
+      margin-right: 4px;
+      content: '';
+      display: inline-block;
+      height: 2px;
+      width: 12px;
+      background-color: #fff;
+      box-shadow: 0 4px #fff, 0 -4px #fff;
+      transition: transform .3s ;
+    }
+    #menu{
+      display: none;
+      position: absolute;
+      background-color: #f8f8f8;
+      width: 200px;
+      z-index: 200;
+      padding: 20px;
+      top: 0;
+      box-shadow: 2px 2px 2px 0  rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      left: 0;
+    }
+    #menu li a:first-child{
+      margin-top: 10px;
+    }
+    #img-mb{
+      display: block;
+    }
+    #menu.active{
+      display: block;
+      animation: show-right 0.6s forwards;
+    }
+    .dropdown-menu{
+      position: static;
+      border: none;
+      width: 150px;
+      margin-right: 400px;
+
+    }
+  }
+
+  @media (max-width: 500px){
+    .logo img{
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 400px){
+    .logo img{
+      width: 130px;
+      margin-left: 8px;
+    }
+  }
+
+
+
+
+  
