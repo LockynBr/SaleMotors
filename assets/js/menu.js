@@ -35,28 +35,27 @@ export default function initDropdownMenu(){
 initDropdownMenu()
 
 export function initMenuMobile(){
+    const menuButton = document.querySelector('[data-menu="button"]')
+    const menuList = document.querySelector('[data-menu="list"]')
+    const img = document.querySelector('#imagem-logo')
+    const eventos = ['click', 'touchstart']
 
-}
+    function openMenu(event){
+        menuList.classList.add('active')
+        menuButton.classList.add('active')
+        img.classList.add('img-disable')
+        outsideClick(menuList, eventos, () => {
+            menuList.classList.remove('active')
+            menuButton.classList.remove('active')
+            img.classList.remove('img-disable')
+        })
+    }
 
-const menuButton = document.querySelector('[data-menu="button"]')
-const menuList = document.querySelector('[data-menu="list"]')
-const img = document.querySelector('#imagem-logo')
-const eventos = ['click', 'touchstart']
-
-function openMenu(event){
-    menuList.classList.add('active')
-    menuButton.classList.add('active')
-    img.classList.add('img-disable')
-    outsideClick(menuList, eventos, () => {
-        menuList.classList.remove('active')
-        menuButton.classList.remove('active')
-        img.classList.remove('img-disable')
+    eventos.forEach((userEvent) => {
+        menuButton.addEventListener(userEvent, openMenu)
     })
 }
 
-eventos.forEach((userEvent) => {
-    menuButton.addEventListener(userEvent, openMenu)
-})
 
 
 
