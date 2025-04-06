@@ -90,3 +90,113 @@
     margin-left: 420px;
     width: 18px;
 }
+
+/* Tablets (768px a 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text-content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .image {
+    max-width: 60%;
+    margin: 20px auto 0;
+  }
+
+  .image img {
+    width: 250px;
+  }
+
+  .icon-left,
+  .icon-right {
+    margin: 10px auto;
+  }
+}
+
+/* Smartphones grandes (576px a 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 30px 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text-content {
+    max-width: 90%;
+  }
+
+  .text-content h2 {
+    font-size: 24px;
+  }
+
+  .text-content p {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+
+  .image {
+    max-width: 70%;
+    margin: 20px auto 0;
+  }
+
+  .image img {
+    width: 220px;
+  }
+
+  .icon-left,
+  .icon-right {
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+/* Smartphones pequenos (<576px) */
+@media (max-width: 576px) {
+  .container {
+    padding: 20px 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text-content h2 {
+    font-size: 22px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  .image img {
+    width: 200px;
+  }
+
+  .icon-left,
+  .icon-right {
+    width: 16px;
+    margin: 8px auto;
+  }
+}

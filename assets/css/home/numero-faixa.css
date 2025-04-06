@@ -35,3 +35,56 @@ body {
     margin-top: -10px;
     width: 120px;
   }
+
+  /* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .counter-section {
+    gap: 60px;
+    padding: 40px 20px;
+  }
+
+  .counter {
+    font-size: 56px;
+  }
+
+  .description {
+    font-size: 18px;
+    width: 100px;
+  }
+}
+
+/* Smartphones grandes (até 768px) */
+@media (max-width: 768px) {
+  .counter-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .counter {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 17px;
+    margin-top: -6px;
+    width: 100%;
+  }
+}
+
+/* Smartphones pequenos (até 480px) */
+@media (max-width: 480px) {
+  .counter-section {
+    gap: 30px;
+    padding: 30px 10px;
+  }
+
+  .counter {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 16px;
+    width: 100%;
+  }
+}
