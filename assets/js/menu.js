@@ -40,16 +40,27 @@ export function initMenuMobile(){
     const img = document.querySelector('#imagem-logo')
     const eventos = ['click', 'touchstart']
 
+    let touchStart = false
     function openMenu(event){
-        menuList.classList.add('active')
-        menuButton.classList.add('active')
-        img.classList.add('img-disable')
-        outsideClick(menuList, eventos, () => {
+        if (event.type === 'touchstart') {
+            touchStart = true;
+          }
+        
+          if (event.type === 'click' && touchStart) {
+            touchStart = false;
+            return;
+          }
+        
+          menuList.classList.add('active')
+          menuButton.classList.add('active')
+          img.classList.add('img-disable')
+          
+          outsideClick(menuList, eventos, () => {
             menuList.classList.remove('active')
             menuButton.classList.remove('active')
             img.classList.remove('img-disable')
-        })
-    }
+          })
+        }
 
     eventos.forEach((userEvent) => {
         menuButton.addEventListener(userEvent, openMenu)
