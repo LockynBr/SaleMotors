@@ -12,9 +12,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../images/deco/fundo.png");
+  background-size: 1000px;
+  background-image: url('../../images/deco/fundo.png');
   background-position: center;
   background-repeat: repeat;
+  border-radius: 10px;
   height: 60vh;
 }
 
@@ -46,7 +48,7 @@
 
 .text-content p {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   color: #000000;
   line-height: 1.6;
   margin-top: 15px;
@@ -56,7 +58,7 @@
   display: inline-block;
   margin-top: 20px;
   padding: 12px 47px;
-  background-color: #24294e;
+  background-color: #24294E;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -72,12 +74,7 @@
 .image {
   max-width: 40%;
   text-align: center;
-  margin-left: 79px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
+  margin-left: 79px;  
 }
 
 .image img {
