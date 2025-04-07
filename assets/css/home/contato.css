@@ -57,6 +57,7 @@
     padding-left: 28px;
     margin-top: 32px;
     color: #0E123B;
+    position: relative;
 }
 
 .contato-horario p {
@@ -69,6 +70,21 @@
     padding-left: 28px;
     margin-top: 32px;
 }
+
+.icon{
+    position: absolute;
+    right: 0;
+    animation: moverAleatorio 9s ease-in-out infinite;
+}
+
+@keyframes moverAleatorio {
+    0%   { transform: translate(0, 0); }
+    20%  { transform: translate(30px, -10px); }
+    40%  { transform: translate(-40px, 30px); }
+    60%  { transform: translate(50px, 20px); }
+    80%  { transform: translate(-20px, -50px); }
+    100% { transform: translate(0, 0); }
+  }
 
 .contato-dados,
 .contato-formulario{
