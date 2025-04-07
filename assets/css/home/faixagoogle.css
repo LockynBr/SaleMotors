@@ -1,6 +1,6 @@
-@import "assets/css/style.css";
+@import "/assets/css/style.css";
 
-#faixa-google-partner {
+.faixa-google-partner {
   background: linear-gradient(to right, #10133B, #1E2060);
   display: flex;
   justify-content: center;
@@ -14,6 +14,11 @@
 
 .container-faixa-google img {
   width: 94px;
+}
+
+.container-faixa-google a {
+  display: flex;
+  align-items: center;
 }
 
 .container-texto {
