@@ -1,4 +1,10 @@
-@import "assets/css/style.css";
+@import "assets/css/global.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .faixa-google-partner {
   background: linear-gradient(to right, #10133B, #1E2060);
@@ -9,7 +15,6 @@
 .container-faixa-google {
   display: flex;
   height: 142px;
-  box-sizing: border-box;
 }
 
 .container-faixa-google img {
