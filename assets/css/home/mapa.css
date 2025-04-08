@@ -1,7 +1,7 @@
-@import "/assets/css/global/global.css";
+@import "../global/global.css";
 
 .mapa-container {
-  background: url(/assets/images/deco/fundo.png) no-repeat center center / cover;
+  background: url('../../images/deco/fundo.png') no-repeat center center / cover;
 
 }
 
