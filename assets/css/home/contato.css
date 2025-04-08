@@ -31,6 +31,7 @@
     margin-bottom: 60px;
     font-family: "Mulish";
     color: #0E123B;
+    font-size: 26px;
 }
 
 .contato-meios a{
@@ -71,7 +72,7 @@
     margin-top: 32px;
 }
 
-.icon{
+.icon-contato{
     position: absolute;
     right: 0;
     animation: moverAleatorio 9s ease-in-out infinite;

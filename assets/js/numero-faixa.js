@@ -1,4 +1,5 @@
-let animated = false;
+export default function initNumeroFaixa(){
+  let animated = false;
 
 function animateCounters() {
   if (animated) return;
@@ -53,3 +54,6 @@ function handleScroll() {
 
 window.addEventListener("scroll", handleScroll);
 document.addEventListener("DOMContentLoaded", handleScroll);
+
+}
+

@@ -1,13 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-.container {
+.sobre-nos-container {
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -20,11 +11,11 @@
   height: 60vh;
 }
 
-.text-content {
+.sobre-nos-text {
   max-width: 27.1%;
 }
 
-.text-content h2 {
+.sobre-nos-text h2 {
   font-size: 28px;
   color: #0c1022;
   font-weight: bold;
@@ -33,7 +24,7 @@
   padding-left: 10px;
 }
 
-.text-content h2::before {
+.sobre-nos-text h2::before {
   content: "";
   width: 18px;
   height: 18px;
@@ -46,7 +37,7 @@
   z-index: -1;
 }
 
-.text-content p {
+.sobre-nos-text p {
   font-size: 16px;
   font-family: Roboto;
   color: #000000;
@@ -54,7 +45,7 @@
   margin-top: 15px;
 }
 
-.btn {
+.sobre-nos-btn {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 47px;
@@ -67,236 +58,45 @@
   transition: 0.3s;
 }
 
-.btn:hover {
+.sobre-nos-btn:hover {
   background-color: #1a1f3c;
 }
 
-.image {
+.sobre-nos-image {
   max-width: 40%;
   text-align: center;
   margin-left: 79px;  
 }
 
-.image img {
+.sobre-nos-image img {
   width: 330px;
 }
 
-.icon-left {
+.sobre-nos-icon-left {
   margin-left: 420px;
   width: 18px;
-  animation: float-icon-left 4s ease-in-out infinite;
+  animation: float-sobre-nos-left 4s ease-in-out infinite;
 }
 
-@keyframes float-icon-left {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-2px, 2px);
-  }
-  50% {
-    transform: translate(1px, -1px);
-  }
-  75% {
-    transform: translate(-1px, 1px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
+@keyframes float-sobre-nos-left {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-2px, 2px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, 1px); }
+  100% { transform: translate(0, 0); }
 }
 
-.icon-right {
-  position: block;
+.sobre-nos-icon-right {
   margin-bottom: 15px;
   margin-left: 110px;
   width: 18px;
-  animation: float-icon-right 4s ease-in-out infinite;
+  animation: float-sobre-nos-right 4s ease-in-out infinite;
 }
 
-@keyframes float-icon-right {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(2px, -1px);
-  }
-  50% {
-    transform: translate(-1px, 2px);
-  }
-  75% {
-    transform: translate(1px, -2px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-/* Tablets (768px a 1024px) */
-@media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 40px 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .text-content {
-    max-width: 90%;
-    text-align: left;
-    padding-top: 20px;
-  }
-
-  .text-content h2 {
-    text-align: left;
-  }
-
-  .text-content p {
-    font-size: 16px;
-  }
-
-  .btn {
-    font-size: 15px;
-    padding: 10px 30px;
-    margin-bottom: 25px;
-  }
-
-  .image {
-    max-width: 70%;
-    margin-top: 30px;
-    justify-content: center;
-    margin-right: 80px;
-  }
-
-  .image img {
-    width: 230px;
-  }
-
-  .icon-right,
-  .icon-left {
-    display: inline-block;
-    width: 16px;
-  }
-
-  .icon-right {
-    margin-left: 100px;
-    margin-bottom: 10px;
-  }
-
-  .icon-left {
-    margin-top: 20px;
-    margin-left: 150px;
-  }
-}
-
-/* Smartphones grandes (576px a 768px) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 30px 15px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .text-content {
-    max-width: 90%;
-    text-align: left;
-    padding-top: 20px;
-  }
-
-  .text-content h2 {
-    font-size: 24px;
-  }
-
-  .text-content p {
-    font-size: 15px;
-  }
-
-  .btn {
-    font-size: 15px;
-    padding: 10px 30px;
-    margin-bottom: 25px;
-  }
-
-  .image {
-    max-width: 80%;
-    margin-top: 20px;
-    margin-right: 80px;
-  }
-
-  .image img {
-    width: 200px;
-  }
-
-  .icon-right {
-    margin-left: 80px;
-    margin-bottom: 10px;
-    width: 16px;
-  }
-
-  .icon-left {
-    margin-top: 20px;
-    margin-left: 90px;
-    width: 16px;
-  }
-}
-
-/* Smartphones pequenos (<576px) */
-@media (max-width: 576px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 20px 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .text-content {
-    max-width: 95%;
-    text-align: left;
-    padding-top: 20px;
-  }
-
-  .text-content h2 {
-    font-size: 22px;
-  }
-
-  .text-content p {
-    font-size: 14px;
-  }
-
-  .btn {
-    font-size: 14px;
-    padding: 10px 25px;
-    margin-bottom: 25px;
-  }
-
-  .image {
-    max-width: 90%;
-    margin-top: 20px;
-    margin-right: 80px;
-  }
-
-  .image img {
-    width: 180px;
-  }
-
-  .icon-right {
-    margin-left: 80px;
-    margin-bottom: 10px;
-    width: 15px;
-  }
-
-  .icon-left {
-    margin-top: 20px;
-    margin-left: 90px;
-    width: 15px;
-  }
+@keyframes float-sobre-nos-right {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(2px, -1px); }
+  50% { transform: translate(-1px, 2px); }
+  75% { transform: translate(1px, -2px); }
+  100% { transform: translate(0, 0); }
 }

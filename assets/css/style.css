@@ -1,1 +1,13 @@
-@import "./global/global.css"
+@import "./global/global.css";
+@import "./global/utilitario.css";
+
+/* HOME */
+@import "./home/menu.css";
+@import "./home/carrosselmarcas.css";
+@import "./home/contato.css";
+@import "./home/faixagoogle.css";
+@import "./home/footer.css";
+@import "./home/mapa.css";
+@import "./home/numero-faixa.css";
+@import "./home/sobre-nos.css";
+@import "./home/slide.css"
