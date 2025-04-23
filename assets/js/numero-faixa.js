@@ -56,4 +56,3 @@ window.addEventListener("scroll", handleScroll);
 document.addEventListener("DOMContentLoaded", handleScroll);
 
 }
-
