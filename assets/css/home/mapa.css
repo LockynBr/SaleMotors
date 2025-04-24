@@ -1,6 +1,8 @@
 @import "../global/global.css";
 
 .mapa-container {
+  width: 100%; /* Garante que vá de ponta a ponta */
+  margin: 14px 0px 90px 0px;
   background: url('../../images/deco/fundo.png') no-repeat center center / cover;
 }
 
@@ -63,6 +65,7 @@ h2::before {
 .regiao h3 {
   margin-bottom: 8px;
   font-weight: 600;
+  font-size: 26px;
 }
 
 .regiao ul {
@@ -110,4 +113,106 @@ h2::before {
   100% { transform: translate(0px, 0px); }
 }
 
+/* Pequenas Telas: até 600px */
+@media (max-width: 600px) {
+  .mapa-conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px;
+  }
 
+  .coluna-esquerda,
+  .coluna-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    flex-wrap: nowrap;
+  }
+
+  .mapa-img {
+    display: block; 
+    order: -1;
+    max-width: 70%;        
+    padding-bottom: 20px;
+  }
+
+  .container-conteudo {
+    padding: 0 16px;
+    display: flex;           
+    flex-direction: column;
+    align-items: center;     
+    padding-bottom: 64px;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;      
+  }
+
+  .regiao {
+    font-size: 16px;
+  }
+
+  .regiao h3 {
+    font-size: 18px;
+  }
+
+  .icon-mapa,
+  .icon2 {
+    display: none;       
+  }
+}
+
+/* Celular: de 600px até 768px */
+@media (min-width: 600px) and (max-width: 768px) {
+  .mapa-conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .mapa-img {
+    order: -1; /* Fica no topo mesmo com flex-row */
+    max-width: 70%;
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    gap: 9px;
+    padding: 30px;
+  }
+
+  .container-conteudo {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 64px;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .regiao {
+    font-size: 18px;
+  }
+
+  .regiao h3 {
+    font-size: 20px;
+  }
+
+  .icon-mapa,
+  .icon2 {
+    display: none;
+  }
+}
