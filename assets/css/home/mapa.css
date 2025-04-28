@@ -50,6 +50,7 @@ h2::before {
 }
 
 .mapa-img {
+  object-fit: contain;
   max-width: 400px;
   height: auto;
   display: block;
@@ -166,7 +167,7 @@ h2::before {
 }
 
 /* Celular: de 600px até 768px */
-@media (min-width: 600px) and (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 768px) {
   .mapa-conteudo {
     display: flex;
     flex-direction: row;
@@ -178,8 +179,7 @@ h2::before {
 
   .mapa-img {
     order: -1; /* Fica no topo mesmo com flex-row */
-    max-width: 70%;
-    width: 100%;
+    max-width: 445px;
     display: block;
     padding-bottom: 20px;
   }
@@ -209,6 +209,97 @@ h2::before {
 
   .regiao h3 {
     font-size: 20px;
+  }
+
+  .icon-mapa,
+  .icon2 {
+    display: none;
+  }
+}
+/* Tablet: de 768px até 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  .mapa-img {
+    max-width: 300px;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    gap: 9px;
+  }
+
+  .container-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 64px;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .regiao {
+    font-size: 18px;
+  }
+
+  .regiao h3 {
+    font-size: 22px;
+  }
+
+  .icon-mapa,
+  .icon2 {
+    display: none;
+  }
+}
+
+/* Desktop: de 992px até 1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .mapa-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 40px; /* espaço mínimo entre colunas e mapa */
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 200px;
+    flex: 1; /* Agora elas expandem dinamicamente */
+  }
+
+  .mapa-img {
+    max-width: 400px;
+    height: auto;
+    flex-shrink: 0; /* Mapa não encolhe */
+    display: block;
+  }
+
+  .container-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 64px;
+  }
+
+  h2 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .regiao {
+    font-size: 20px;
+  }
+
+  .regiao h3 {
+    font-size: 24px;
   }
 
   .icon-mapa,
