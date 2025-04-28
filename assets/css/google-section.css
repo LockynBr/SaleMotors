@@ -1,0 +1,135 @@
+@import "./global/utilitario.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.background-icon {
+  margin-bottom: -250px;
+    width: 10%;
+    height: auto;
+    -webkit-user-drag: none;
+  }
+
+.google-header {
+  background: linear-gradient(90deg, #10133b, #1e2060);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Mulish";
+}
+
+.content-grid {
+  padding: 3rem;
+  padding-right: 150px;
+  padding-left: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.info-block {
+  padding: 1rem 0;
+}
+
+.info-block h2 {
+  color: #10133B;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  font-family: "Mulish";
+}
+
+.info-block p {
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+.visual-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visual-element img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+}
+
+.feature-icon {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.icon-wrapper {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 2rem 1.5rem;
+  }
+  .content-grid .info-block {
+    order: 1;
+  }
+  .content-grid .visual-element {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .google-header {
+    font-size: 1.3rem;
+    padding: 2rem 1rem;
+  }
+  .content-grid {
+    padding: 2rem 1rem;
+  }
+  .info-block h2 {
+    font-size: 1.2rem;
+  }
+  .info-block p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .google-header {
+    font-size: 1.1rem;
+    padding: 1.5rem 1rem;
+  }
+  .content-grid {
+    padding: 1.5rem 1rem;
+  }
+  .info-block h2 {
+    font-size: 1rem;
+  }
+  .info-block p {
+    font-size: 0.9rem;
+  }
+  .visual-element img {
+    width: 140px;
+  }
+  .feature-icon {
+    width: 60px;
+  }
+  .background-icon {
+    margin-bottom: -250px;
+      width: 30%;
+      height: auto;
+    }
+}
