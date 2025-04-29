@@ -1,4 +1,3 @@
-
 .carousel-container {
   overflow: hidden;
   width: 100%;
@@ -22,4 +21,40 @@
 
 .carousel-container.dragging {
   cursor: grabbing;
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .carousel-track {
+    gap: 35px;
+    padding: 18px 0;
+  }
+
+  .carousel-track img {
+    height: 55px;
+  }
+}
+
+/* Celulares grandes (até 768px) */
+@media (max-width: 768px) {
+  .carousel-track {
+    gap: 30px;
+    padding: 18px 0;
+  }
+
+  .carousel-track img {
+    height: 50px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .carousel-track {
+    gap: 25px;
+    padding: 15px 0;
+  }
+
+  .carousel-track img {
+    height: 45px;
+  }
 }
