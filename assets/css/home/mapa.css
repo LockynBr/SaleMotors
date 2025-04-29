@@ -92,7 +92,6 @@ h2::before {
   left: 150px;
   top: 70px;
   animation: moverAleatorio1 15s ease-in-out infinite;
-
 }
 
 @keyframes moverAleatorio1 {
@@ -114,8 +113,65 @@ h2::before {
   100% { transform: translate(0px, 0px); }
 }
 
+@media (max-width: 457px) {
+    .mapa-conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    flex-wrap: nowrap;
+  }
+
+  .mapa-img {
+    display: block; 
+    order: -1;
+    max-width: 70%;        
+    padding-bottom: 20px;
+  }
+
+  .container-conteudo {
+    padding: 0 16px;
+    display: flex;           
+    flex-direction: column;
+    align-items: center;     
+    padding-bottom: 64px;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;      
+  }
+
+  .regiao {
+    font-size: 16px;
+  }
+
+  .regiao h3 {
+    font-size: 18px;
+  }
+
+  .icon-mapa {
+    left: -50px;
+    top: 400px;
+  }
+
+  .icon2{
+    position: absolute;
+    left: 230px;
+    top: -270px;
+  }
+}
+
 /* Pequenas Telas: até 600px */
-@media (max-width: 600px) {
+@media (min-width: 457px) and (max-width: 600px) {
   .mapa-conteudo {
     display: flex;
     flex-direction: row;
@@ -160,9 +216,10 @@ h2::before {
     font-size: 18px;
   }
 
-  .icon-mapa,
-  .icon2 {
-    display: none;       
+  .icon2{
+    position: absolute;
+    left: 140px;
+    top: -100px;
   }
 }
 
@@ -211,9 +268,10 @@ h2::before {
     font-size: 20px;
   }
 
-  .icon-mapa,
-  .icon2 {
-    display: none;
+  .icon2{
+    position: absolute;
+    left: 140px;
+    top: -100px;
   }
 }
 /* Tablet: de 768px até 992px */
@@ -247,9 +305,9 @@ h2::before {
     font-size: 22px;
   }
 
-  .icon-mapa,
   .icon2 {
-    display: none;
+    left: 140px;
+    top: -100px;
   }
 }
 
@@ -300,10 +358,5 @@ h2::before {
 
   .regiao h3 {
     font-size: 24px;
-  }
-
-  .icon-mapa,
-  .icon2 {
-    display: none;
   }
 }
