@@ -41,3 +41,122 @@
   line-height: 1.5;
   text-align: justify;
 }
+
+/* Pequenas Telas: até 600px */
+@media (max-width: 600px) {
+  .container-faixa-google {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-faixa-google img {
+    width: 80px;
+    margin-bottom: 16px;
+  }
+
+  .container-texto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-texto h3 {
+    width: auto;
+    font-size: 22px;
+    margin: 0 0 12px 0;
+  }
+
+  .container-texto p {
+    width: auto;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* Celular: 600px até 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+  .container-faixa-google {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-faixa-google img {
+    width: 90px;
+    margin-bottom: 16px;
+  }
+
+  .container-texto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-texto h3 {
+    width: auto;
+    font-size: 26px;
+    margin: 0 0 12px 0;
+  }
+
+  .container-texto p {
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .container-faixa-google {
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .container-faixa-google img {
+    width: 105px;
+  }
+
+  .container-texto {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .container-texto h3 {
+    width: auto;
+    font-size: 26px;
+    margin: 0 0 10px 0;
+  }
+
+  .container-texto p {
+    width: 100%;
+    max-width: 500px;
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+
+/* Desktop: 992px até 1200px */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container-texto h3 {
+    font-size: 30px;
+    margin: 0 14px 0 24px;
+  }
+
+  .container-faixa-google img {
+    width: 90px;
+  }
+
+}
+
+/* Grandes Telas: acima de 1200px */
+@media (min-width: 1201px) {
+  .container-faixa-google {
+    max-width: 1200px;
+  }
+}
