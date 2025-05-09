@@ -1,6 +1,6 @@
 <?php
-include("includes/config.php");
-include("vendor/autoload.php");
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/includes/config.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
