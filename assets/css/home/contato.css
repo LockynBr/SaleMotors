@@ -155,6 +155,12 @@
     box-shadow: 0 0 0 2px #7d98bb;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
 @media (max-width: 800px){
     .contato-box{
         grid-template-columns: 1fr;
