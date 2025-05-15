@@ -1,0 +1,87 @@
+.cards-beneficios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-beneficios {
+  background-color: #FFF;
+  border-radius: 25px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.image-beneficios-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.overlay-beneficios {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #10133b, #1e2060);
+  border-radius: 25px 25px 0 25px;
+  z-index: 1;
+}
+
+.card-beneficios-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  padding: 3px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: wheat;
+}
+
+.card-beneficios-image .card-beneficios-img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.card-beneficios-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-name-beneficios {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-beneficios:hover .card-beneficios-description {
+  opacity: 1;
+  height: auto;
+  margin-top: 10px;
+}
+
+.card-beneficios-description {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 15px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .cards-beneficios-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

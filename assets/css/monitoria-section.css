@@ -50,6 +50,11 @@ body {
   font-family: "Mulish";
 }
 
+.info-block h2::before {
+  content: none !important;
+  display: none !important;
+}
+
 .info-block p {
   font-size: 1.2rem;
   color: #334155;
@@ -83,9 +88,16 @@ body {
     grid-template-rows: auto auto;
     padding: 2rem 1.5rem;
   }
+
   .content-grid .info-block {
     order: 1;
   }
+
+  .info-block h2 {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
   .content-grid .visual-element {
     order: 2;
   }
@@ -101,6 +113,7 @@ body {
   }
   .info-block h2 {
     font-size: 1.2rem;
+    text-align: left;
   }
   .info-block p {
     font-size: 0.95rem;
@@ -117,6 +130,7 @@ body {
   }
   .info-block h2 {
     font-size: 1rem;
+    text-align: left;
   }
   .info-block p {
     font-size: 0.9rem;
