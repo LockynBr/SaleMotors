@@ -23,10 +23,7 @@ export default function initContato() {
 
     const telefoneRegex = /^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$/;
     if (!telefoneRegex.test(telefone.value.trim())) {
-      mostrarErro(
-        telefone,
-        'Telefone inválido.',
-      );
+      mostrarErro(telefone, 'Telefone inválido.');
       valido = false;
     }
 
@@ -46,7 +43,7 @@ export default function initContato() {
 
     if (valido) {
       alert('Formulário enviado com sucesso!');
-      form.submit(); 
+      form.submit();
     }
   });
 
