@@ -4,6 +4,8 @@
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 64px;
+  margin-top: 64px;
 }
 
 .card-beneficios {
