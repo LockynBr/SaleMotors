@@ -1,0 +1,82 @@
+.videomain-card {
+  position: relative;
+  background: linear-gradient(to top, rgba(16, 19, 59, 0.8), transparent);
+  color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem;
+  margin: 0px 64px;
+  height: 550px;
+}
+
+.videomain-background-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.videomain-title {
+  font-family: serif;
+  font-size: 2rem;
+  max-width: 40rem;
+  margin: 0;
+}
+
+.videomain-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 0.875rem;
+}
+
+.videomain-footer p {
+  margin-bottom: 1rem;
+}
+
+.videomain-highlight {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.videomain-highlight:hover {
+  text-decoration: none;
+}
+
+.videomain-recommendation {
+  text-align: right;
+}
+
+.videomain-recommendation-title {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.videomain-partners {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.videomain-partner-logo {
+  width: 7rem;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+  .videomain-card {
+    height: 200px;
+    padding: 1.5rem;
+  }
+
+  .videomain-title {
+    font-size: 1.5rem;
+  }
+}
