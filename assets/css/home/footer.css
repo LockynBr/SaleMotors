@@ -1,7 +1,7 @@
 footer {
   background-color: #10133B;
   color: white;
-  padding: 40px 60px 80px; /* extra bottom space for copyright */
+  padding: 40px 60px 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,6 +9,7 @@ footer {
   row-gap: 30px;
   column-gap: 40px;
   position: relative;
+  font-family: 'Roboto';
 }
 
 .logo {
@@ -127,7 +128,7 @@ footer {
 nav a {
   position: relative;
   text-decoration: none;
-  color: #000; /* ou qualquer cor do seu link */
+  color: #000;
   padding-bottom: 5px;
 }
 
@@ -138,7 +139,7 @@ nav a::after {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: white; /* cor da linha */
+  background-color: white;
   transition: width 0.3s ease;
 }
 
@@ -146,7 +147,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* Tablets (768px a 1024px) */
 @media (max-width: 1024px) {
   footer {
     flex-direction: column;
@@ -189,7 +189,6 @@ nav a:hover::after {
   }
 }
 
-/* Smartphones grandes (480px a 768px) */
 @media (max-width: 768px) {
   footer {
     padding: 40px 20px 80px;
@@ -225,7 +224,6 @@ nav a:hover::after {
   }
 }
 
-/* Smartphones pequenos (até 480px) */
 @media (max-width: 480px) {
   footer {
     padding: 30px 15px 60px;
