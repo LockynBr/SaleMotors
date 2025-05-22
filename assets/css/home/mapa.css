@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-h2 {
+.title {
   font-size: 36px;
   font-family: 'Mulish';
   margin-bottom: 30px;
@@ -22,7 +22,7 @@ h2 {
 }
 
 
-h2::before {
+.title::before {
   content: "";
   width: 18px; /* Tamanho do quadrado */
   height: 18px;
@@ -145,7 +145,7 @@ h2::before {
     padding-bottom: 64px;
   }
 
-  h2 {
+  .title {
     font-size: 30px;
     text-align: center;      
   }
@@ -203,7 +203,7 @@ h2::before {
     padding-bottom: 64px;
   }
 
-  h2 {
+  .title {
     font-size: 30px;
     text-align: center;      
   }
@@ -255,7 +255,7 @@ h2::before {
     padding-bottom: 64px;
   }
 
-  h2 {
+  .title {
     font-size: 30px;
     text-align: center;
   }
@@ -292,7 +292,7 @@ h2::before {
     padding-bottom: 64px;
   }
 
-  h2 {
+  .title {
     font-size: 32px;
     text-align: center;
   }
@@ -347,7 +347,7 @@ h2::before {
     padding-bottom: 64px;
   }
 
-  h2 {
+  .title {
     font-size: 36px;
     text-align: left;
   }
