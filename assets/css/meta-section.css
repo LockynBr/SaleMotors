@@ -20,6 +20,7 @@ body {
   }
 
 .meta-header {
+  margin-top: 164px;
   background: linear-gradient(90deg, #10133b, #1e2060);
   color: white;
   padding: 3rem 2rem;
@@ -101,6 +102,13 @@ body {
     order: 2;
   }
 }
+
+@media (max-width: 900px){
+  .meta-header{
+    margin-top: 80px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .meta-header {

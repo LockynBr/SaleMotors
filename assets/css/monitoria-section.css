@@ -20,6 +20,7 @@ body {
   }
 
 .monitoria-header {
+  margin-top: 164px;
   background: linear-gradient(90deg, #10133b, #1e2060);
   color: white;
   padding: 3rem 2rem;
@@ -100,6 +101,12 @@ body {
 
   .content-grid .visual-element {
     order: 2;
+  }
+}
+
+@media(max-width: 900px){
+  .monitoria-header{
+    margin-top: 90px;
   }
 }
 
