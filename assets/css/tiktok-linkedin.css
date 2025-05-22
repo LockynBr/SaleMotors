@@ -42,6 +42,7 @@ body {
 
 .info-block {
   padding: 1rem 0;
+  margin-left: 190px;
 }
 
 .info-block h2 {
@@ -88,10 +89,12 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     padding: 2rem 1.5rem;
+    margin-bottom: 50px;
   }
 
   .content-grid .info-block {
     order: 1;
+    margin-left: 0 !important;
   }
   
   .info-block h2 {
