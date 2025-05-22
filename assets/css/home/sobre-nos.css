@@ -52,11 +52,12 @@
   padding: 12px 47px;
   background-color: #24294E;
   color: white;
-  font-size: 16px;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
   transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto;
 }
 
 .sobre-nos-btn:hover {
