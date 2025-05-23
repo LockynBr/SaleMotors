@@ -101,3 +101,200 @@ section.container-funil {
   width: 600px;
   text-align: justify;
 }
+
+@media (max-width: 1280px) {
+  .container-content {
+    max-width: 90%;
+  }
+
+  .box {
+    width: 180px;
+    height: 130px;
+    margin: 15px;
+  }
+
+  .box p {
+    font-size: 15px;
+  }
+
+  .result-content {
+    width: 90%;
+  }
+
+  .result-content p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-content h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+
+  .box-group {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .result-content {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .result-content img {
+    width: 250px;
+  }
+
+  .result-content p {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 912px) {
+  .box {
+    width: 160px;
+    height: 120px;
+  }
+
+  .box p {
+    font-size: 12px;
+  }
+
+  .result-content img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-content {
+    align-items: center;
+  }
+
+  .container-content h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .box {
+    width: 140px;
+    height: 110px;
+    margin: 10px;
+  }
+
+  .box p {
+    font-size: 13px;
+  }
+
+  .result-content p {
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 120px;
+    height: 100px;
+  }
+
+  .box img {
+    width: 36px;
+  }
+
+  .box p {
+    font-size: 11px;
+  }
+
+
+  .result-content img {
+    width: 180px;
+  }
+
+  .result-content p {
+    font-size: 13px;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  section.container-funil {
+    height: auto;
+    padding-bottom: 40px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .box {
+    width: 100px;
+    height: 90px;
+  }
+
+  .box p {
+    font-size: 9px;
+  }
+
+  .result-content img {
+    width: 160px;
+  }
+
+  .result-content p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-content h2 {
+    font-size: 22px;
+  }
+
+  .box {
+    width: 90px;
+    height: 80px;
+  }
+
+  .box img {
+    width: 30px;
+  }
+
+  .box p {
+    font-size: 8px;
+  }
+
+  .result-content img {
+    width: 140px;
+  }
+
+  .result-content p {
+    font-size: 11px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .box {
+    width: 80px;
+    height: 70px;
+  }
+
+  .box p {
+    font-size: 5.5px;
+  }
+
+  .result-content img {
+    width: 120px;
+  }
+
+  .result-content p {
+    font-size: 10px;
+  }
+}
