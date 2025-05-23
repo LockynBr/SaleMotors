@@ -4,6 +4,7 @@
   background: linear-gradient(to right, #10133B, #1E2060);
   display: flex;
   justify-content: center;
+  margin-top: 64px;
 }
 
 .container-faixa-google {

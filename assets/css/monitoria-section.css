@@ -85,11 +85,16 @@ body {
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+/* ==================== CELULARES PEQUENOS (até 480px) ==================== */
+@media (max-width: 480px) {
+  .monitoria-header {
+    font-size: 1.1rem;
+    padding: 1.5rem 1rem;
+  }
+
   .content-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     margin-bottom: 50px;
   }
 
@@ -99,63 +104,303 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left;
+  }
+
+  .info-block p {
+    font-size: 0.9rem;
   }
 
   .content-grid .visual-element {
     order: 2;
     margin-right: 0 !important;
   }
-}
 
-@media(max-width: 900px){
-  .monitoria-header{
-    margin-top: 90px;
+  .visual-element img {
+    width: 140px;
+  }
+
+  .feature-icon {
+    width: 60px;
+  }
+
+  .background-icon {
+    margin-bottom: -250px;
+    width: 30%;
+    height: auto;
   }
 }
 
-@media (max-width: 768px) {
+/* ==================== CELULARES MÉDIOS (481px até 576px) ==================== */
+@media (min-width: 481px) and (max-width: 576px) {
   .monitoria-header {
-    font-size: 1.3rem;
-    padding: 2rem 1rem;
-  }
-  .content-grid {
-    padding: 2rem 1rem;
-  }
-  .info-block h2 {
     font-size: 1.2rem;
-    text-align: left;
+    padding: 2rem 1rem;
   }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.8rem 1.2rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .info-block {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+
+  .info-block h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
   .info-block p {
     font-size: 0.95rem;
   }
+
+  .visual-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .visual-element img {
+    width: 150px;
+  }
+
+  .feature-icon {
+    width: 65px;
+  }
+
+  .background-icon {
+    width: 28%;
+    margin-bottom: -250px;
+  }
 }
 
-@media (max-width: 480px) {
+/* ==================== CELULARES GRANDES (577px até 767px) ==================== */
+@media (min-width: 577px) and (max-width: 767px) {
   .monitoria-header {
     font-size: 1.1rem;
     padding: 1.5rem 1rem;
   }
+
   .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
+    justify-items: center;
+    text-align: center;
   }
+
+  .info-block {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+
   .info-block h2 {
     font-size: 1rem;
-    text-align: left;
+    text-align: center;
   }
+
   .info-block p {
     font-size: 0.9rem;
   }
-  .visual-element img {
-    width: 120px;
+
+  .visual-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 0 !important;
   }
+
+  .visual-element img {
+    width: 140px;
+  }
+
   .feature-icon {
     width: 60px;
   }
+
   .background-icon {
+    width: 22%;
     margin-bottom: -250px;
-      width: 30%;
-      height: auto;
-    }
+  }
+}
+
+/* ==================== TABLETS (768px até 1024px) ==================== */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .monitoria-header {
+    font-size: 1.5rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 2.5rem 50px;
+    margin-bottom: 50px;
+  }
+
+  .content-grid .info-block {
+    order: unset;
+    margin-left: 80px;
+  }
+
+  .info-block h2 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .info-block p {
+    font-size: 1.1rem;
+  }
+
+  .content-grid .visual-element {
+    order: unset;
+    margin-right: -20px;
+  }
+
+  .visual-element img {
+    width: 170px;
+  }
+
+  .feature-icon {
+    width: 70px;
+  }
+
+  .background-icon {
+    width: 12%;
+  }
+}
+
+/* ==================== NOTEBOOKS GRANDES (1201px até 1439px) ==================== */
+@media (min-width: 1201px) and (max-width: 1439px) {
+  .monitoria-header {
+    font-size: 1.9rem;
+    padding: 3rem 2.5rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 120px;
+    margin-bottom: 60px;
+    column-gap: 60px;
+  }
+
+  .info-block {
+    margin-left: 95px;
+  }
+
+  .info-block h2 {
+    font-size: 2rem;
+  }
+
+  .info-block p {
+    font-size: 1.2rem;
+  }
+
+  .visual-element {
+    width: 70%;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+
+  .visual-element img {
+    width: 190px;
+  }
+
+  .feature-icon {
+    width: 80px;
+  }
+}
+
+/* ==================== DESKTOPS PEQUENOS (1440px até 1599px) ==================== */
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .monitoria-header {
+    font-size: 2rem;
+    padding: 3rem 3rem;
+  }
+
+  .content-grid {
+    padding: 3rem 120px;
+  }
+
+  .info-block {
+    margin-left: 140px;
+  }
+
+  .info-block h2 {
+    font-size: 1.9rem;
+  }
+
+  .info-block p {
+    font-size: 1.25rem;
+  }
+
+  .visual-element img {
+    width: 190px;
+  }
+
+  .feature-icon {
+    width: 80px;
+  }
+}
+
+/* ==================== DESKTOPS MÉDIOS (1600px até 1919px) ==================== */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .content-grid {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .info-block {
+    margin-left: 160px;
+  }
+
+  .visual-element img {
+    width: 200px;
+  }
+
+  .feature-icon {
+    width: 85px;
+  }
+}
+
+/* ==================== DESKTOPS GRANDES (1920px+) ==================== */
+@media (min-width: 1920px) {
+  .monitoria-header {
+    font-size: 2.2rem;
+    padding: 3rem 3rem;
+  }
+
+  .content-grid {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .info-block {
+    margin-left: 190px;
+  }
+
+  .info-block h2 {
+    font-size: 2rem;
+  }
+
+  .info-block p {
+    font-size: 1.3rem;
+  }
+
+  .visual-element img {
+    width: 210px;
+  }
+
+  .feature-icon {
+    width: 90px;
+  }
 }
