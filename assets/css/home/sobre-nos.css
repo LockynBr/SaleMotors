@@ -16,16 +16,17 @@
   position: relative;
 }
 
-.sobre-nos-text h2 {
-  font-size: 28px;
+.sobre-nos-text .title {
+  font-size: 36px;
   color: #0c1022;
   font-weight: bold;
   position: relative;
   display: inline-block;
   padding-left: 10px;
+  margin-bottom: 10px;
 }
 
-.sobre-nos-text h2::before {
+.sobre-nos-text .title::before {
   content: "";
   width: 18px;
   height: 18px;
@@ -34,12 +35,12 @@
   position: absolute;
   transform: translateX(35%);
   left: 0;
-  top: 43%;
+  top: 50%;
   z-index: -1;
 }
 
 .sobre-nos-text p {
-  font-size: 16px;
+  font-size: 19px;
   font-family: Roboto;
   color: #000000;
   line-height: 1.6;
@@ -52,11 +53,12 @@
   padding: 12px 47px;
   background-color: #24294E;
   color: white;
-  font-size: 16px;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
   transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto;
 }
 
 .sobre-nos-btn:hover {
@@ -76,22 +78,24 @@
 .sobre-nos-icon-left {
   margin-left: 420px;
   width: 18px;
-  animation: float-sobre-nos-left 4s ease-in-out infinite;
+  animation: float-sobre-nos-left 15s ease-in-out infinite;
 }
 
 @keyframes float-sobre-nos-left {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(-2px, 2px); }
-  50% { transform: translate(1px, -1px); }
-  75% { transform: translate(-1px, 1px); }
-  100% { transform: translate(0, 0); }
+  0%   { transform: translate(0px, 0px); }
+  15%  { transform: translate(-25px, 20px); }
+  30%  { transform: translate(35px, 15px); }
+  50%  { transform: translate(50px, 25px); }
+  70%  { transform: translate(20px, 15px); }
+  85%  { transform: translate(-30px, 10px); }
+  100% { transform: translate(0px, 0px); }
 }
 
 .sobre-nos-icon-right {
   margin-bottom: 10px;
   margin-left: 310px;
   width: 18px;
-  animation: float-sobre-nos-right 4s ease-in-out infinite;
+  animation: float-sobre-nos-right 9s ease-in-out infinite;
   position: absolute;
   top: 0;
   right: 200px;
@@ -99,10 +103,11 @@
 }
 
 @keyframes float-sobre-nos-right {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(2px, -1px); }
-  50% { transform: translate(-1px, 2px); }
-  75% { transform: translate(1px, -2px); }
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(10px, -10px); }
+  40%  { transform: translate(-20px, -10px); }
+  60%  { transform: translate(-30px, 5px); }
+  80%  { transform: translate(-25px, -10px); }
   100% { transform: translate(0, 0); }
 }
 
@@ -111,8 +116,8 @@
     max-width: 35%;
   }
 
-  .sobre-nos-text h2 {
-    font-size: 24px;
+  .sobre-nos-text .title {
+    font-size: 30px;
     bottom: -50px;
   }
 
@@ -182,7 +187,7 @@
 }
 
 @media (max-width: 576px) {
-  .sobre-nos-text h2 {
+  .sobre-nos-text .title {
     font-size: 22px;
   }
 

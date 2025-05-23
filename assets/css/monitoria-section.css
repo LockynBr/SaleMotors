@@ -20,6 +20,7 @@ body {
   }
 
 .monitoria-header {
+  margin-top: 164px;
   background: linear-gradient(90deg, #10133b, #1e2060);
   color: white;
   padding: 3rem 2rem;
@@ -41,6 +42,7 @@ body {
 
 .info-block {
   padding: 1rem 0;
+  margin-left: 190px;
 }
 
 .info-block h2 {
@@ -64,6 +66,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: -40px;
 }
 
 .visual-element img {
@@ -87,10 +90,12 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     padding: 2rem 1.5rem;
+    margin-bottom: 50px;
   }
 
   .content-grid .info-block {
     order: 1;
+    margin-left: 0 !important;
   }
 
   .info-block h2 {
@@ -100,6 +105,13 @@ body {
 
   .content-grid .visual-element {
     order: 2;
+    margin-right: 0 !important;
+  }
+}
+
+@media(max-width: 900px){
+  .monitoria-header{
+    margin-top: 90px;
   }
 }
 
