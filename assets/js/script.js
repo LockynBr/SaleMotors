@@ -6,6 +6,7 @@ import initCarrosselMarcas from './carrosselmarcas.js';
 import initNumeroFaixa from './numero-faixa.js'; // Importar o script
 import initContato from './contato.js';
 import initMenuRolagem from './menuRolagem.js';
+import initFunil from './funil.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Inicializações do SlideNav
@@ -48,5 +49,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initDropdownMenu();
   initContato();
   initMenuRolagem(); // Seu menu-navbar existe em campanhas-google.html, então esta deve funcionar.
-  initFunil();
 });
+initFunil();
