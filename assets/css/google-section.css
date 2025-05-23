@@ -66,7 +66,6 @@ body {
 .info-block p {
   font-size: 1.2rem;
   color: #334155;
-  text-align: justify;
 }
 
 .visual-element {
@@ -89,26 +88,13 @@ body {
 
 @media (max-width: 1024px) {
   .content-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
     padding: 2rem 1.5rem;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
 
-  .content-grid .info-block {
-    order: 1;
-  }
-
   .info-block h2 {
     text-align: left;
-  }
-
-  .content-grid .visual-element {
-    order: 2;
-  }
-  .content-grid .visual-element {
-    order: 2;
   }
 }
 
@@ -125,13 +111,27 @@ body {
   }
   .content-grid {
     padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
+
+  .content-grid .info-block {
+    order: 1;
+  }
+
   .info-block h2 {
     font-size: 1.2rem;
     text-align: left;
   }
   .info-block p {
     font-size: 0.95rem;
+  }
+
+  .content-grid .visual-element {
+    order: 2;
+  }
+  .content-grid .visual-element {
+    order: 2;
   }
 }
 
