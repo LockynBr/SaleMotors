@@ -1,0 +1,103 @@
+@import "../global/global.css";
+@import "../global/utilitario.css";
+
+section.container-funil {
+  background-color: #0E123B;
+  height: 1024px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.container-content {
+  max-width: 1004px; 
+  margin: 0 auto; 
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.container-content h2 {
+  font-family: 'Mulish';
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 20px;
+  max-width: 600px;
+}
+
+.box-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 211px;
+  height: 136px;
+  background-color: #E6E7E8;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border: none;
+}
+
+.box img {
+  width: 46px;
+}
+
+.box p {
+  font-family: 'Mulish';
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.box-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 15px; 
+  gap: 10px;
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: baseline;
+  margin: auto;
+  background-color: #0E123B;
+  width: 965px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.result-content img {
+  width: 300px;
+  /* margin: 20px 10px 10px 15px; */
+}
+
+.result-content h2 {
+  margin: 20px 10px 10px 10px;
+}
+
+.result-content p {
+  font-family: 'Roboto';
+  color: #fff;
+  /* margin-top: 10px; */
+  width: 600px;
+  text-align: justify;
+}
