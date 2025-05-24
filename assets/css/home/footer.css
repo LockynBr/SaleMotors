@@ -148,86 +148,13 @@ nav a:hover::after {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
+/* Celulares Pequenos e Médios: até 576px */
+@media (max-width: 576px) {
   footer {
     flex-direction: column;
     align-items: center;
-    padding: 50px 30px 100px;
-    gap: 40px;
-  }
-
-  .logo {
-    margin: 0 auto;
-  }
-
-  .google-partner {
-    margin-top: 10px;
-  }
-
-  .contact, .services, .info {
     text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .divider {
-    width: 50%;
-    margin: 10px auto;
-  }
-
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 20px;
-  }
-
-  .copyright {
-    position: relative;
-    margin-top: 20px;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  footer {
-    padding: 40px 20px 80px;
-    gap: 30px;
-  }
-
-  .logo img {
-    width: 120px;
-  }
-
-  .google-partner img {
-    width: 100px;
-  }
-
-  .contact, .services, .info {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto 25px;
-    text-align: center;
-  }
-
-  .social-icons a {
-    font-size: 20px;
-  }
-
-  .divider {
-    width: 60%;
-  }
-
-  .copyright {
-    font-size: 12px;
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  footer {
-    padding: 30px 15px 60px;
+    padding: 40px 20px 60px;
     gap: 25px;
   }
 
@@ -243,25 +170,141 @@ nav a:hover::after {
     font-size: 15px;
   }
 
-  .contact p, .numero {
-    font-size: 13px;
-  }
-
-  .links ul li a {
+  .contact p, .numero, .links ul li a {
     font-size: 13px;
   }
 
   .divider {
-    width: 70%;
+    width: 75%;
+    margin: 10px auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
   }
 
   .social-icons a {
     font-size: 18px;
-    margin-right: 10px;
   }
 
   .copyright {
     font-size: 11px;
+    text-align: center;
     margin-top: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
   }
-}    
+}
+
+/* Celulares Grandes e Tablets Pequenos: 577px até 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 30px 80px;
+    gap: 30px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .google-partner img {
+    width: 100px;
+  }
+
+  .contact, .services, .info {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 25px;
+  }
+
+  .divider {
+    width: 65%;
+    margin: 10px auto;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* Tablets Médios a Desktops: 769px até 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 40px 100px;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .logo {
+    align-items: flex-start;
+  }
+
+  .google-partner {
+    margin-top: 10px;
+  }
+
+  .contact, .services, .info {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .copyright {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 12px;
+  }
+}
+
+/* Desktops Médios e Maiores: acima de 1201px */
+@media (min-width: 1201px) {
+  footer {
+    padding: 80px 60px 120px;
+    gap: 50px;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  .google-partner img {
+    width: 110px;
+  }
+
+  .contact h3, .services h3, .info h3 {
+    font-size: 16px;
+  }
+
+  .contact p, .links ul li a {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}

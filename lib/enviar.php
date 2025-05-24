@@ -60,11 +60,13 @@ try {
   $mail->Username   = SMTP_USER;
   $mail->Password   = SMTP_PASS;
   $mail->Port       = SMTP_PORT;
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->CharSet    = 'utf8';
 
   // Remetente e destinatário
-  $mail->setFrom('pauloluz566@gmail.com', 'Contato do Site');
-  $mail->addAddress('pauloluz566@gmail.com', 'Paulo Henrique');
+  $mail->setFrom(SMTP_USER, 'Contato do Site');
+  $mail->addAddress(SMTP_USER, 'Contato do Site');
+
 
   // Corpo do e-mail
   $mail->isHTML(true);

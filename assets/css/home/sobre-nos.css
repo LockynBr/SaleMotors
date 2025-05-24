@@ -112,49 +112,8 @@
   100% { transform: translate(0, 0); }
 }
 
-@media (max-width: 1370px) and (min-width: 1025px) {
-  .sobre-nos-text {
-    max-width: 35%;
-  }
-
-  .sobre-nos-text .title {
-    font-size: 30px;
-    bottom: -50px;
-  }
-
-  .sobre-nos-text p {
-    font-size: 15px;
-  }
-
-  .sobre-nos-btn {
-    font-size: 14px;
-    padding: 10px 35px;
-  }
-
-  .sobre-nos-image {
-    max-width: 40%;
-    margin-left: 40px;
-  }
-
-  .sobre-nos-image img {
-    width: 250px;
-  }
-
-  .sobre-nos-icon-left {
-    margin-left: 300px;
-    margin-bottom: 5px;
-  }
-
-  .sobre-nos-icon-right {
-    width: 15px;
-    margin: 15px auto 0;
-    position: static;
-    display: block;
-    margin-left: 200px;
-  }
-}
-
-@media (max-width: 1024px) {
+/* Celulares Pequenos: até 576px */
+@media (max-width: 576px) {
   .sobre-nos-container {
     flex-direction: column;
     height: auto;
@@ -168,26 +127,6 @@
     margin: 0 auto;
   }
 
-  .sobre-nos-image {
-    margin-top: 30px;
-  }
-
-  .sobre-nos-image img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-  }
-
-  .sobre-nos-icon-left,
-  .sobre-nos-icon-right {
-    width: 15px;
-    margin: 15px auto;
-    position: static;
-    display: block;
-  }
-}
-
-@media (max-width: 576px) {
   .sobre-nos-text .title {
     font-size: 22px;
   }
@@ -201,8 +140,14 @@
     padding: 10px 20px;
   }
 
+  .sobre-nos-image {
+    margin-top: 30px;
+  }
+
   .sobre-nos-image img {
+    width: 100%;
     max-width: 180px;
+    height: auto;
   }
 
   .sobre-nos-icon-left,
@@ -211,5 +156,165 @@
     margin: 10px auto;
     position: static;
     display: block;
+  }
+}
+
+/* Celulares Maiores: 577px até 768px */
+@media (min-width: 577px) and (max-width: 949px) {
+  .sobre-nos-container {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .sobre-nos-text,
+  .sobre-nos-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .sobre-nos-text .title {
+    font-size: 24px;
+  }
+
+  .sobre-nos-text p {
+    font-size: 15px;
+  }
+
+  .sobre-nos-btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  .sobre-nos-image {
+    margin-top: 30px;
+  }
+
+  .sobre-nos-image img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  .sobre-nos-icon-left,
+  .sobre-nos-icon-right {
+    width: 15px;
+    margin: 15px auto;
+    position: static;
+    display: block;
+  }
+}
+
+/* Tablets: 769px até 1024px */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .sobre-nos-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    position: relative;
+  }
+
+  .sobre-nos-text {
+    max-width: 45%;
+  }
+
+  .sobre-nos-text .title {
+    font-size: 28px;
+  }
+
+  .sobre-nos-text p {
+    font-size: 15px;
+  }
+
+  .sobre-nos-btn {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+
+  .sobre-nos-image {
+    max-width: 40%;
+  }
+
+  .sobre-nos-image img {
+    width: 240px;
+  }
+}
+
+/* Desktop Médio: 1025px até 1370px */
+@media (min-width: 1201px) and (max-width: 1470px) {
+  .sobre-nos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 40px;
+    position: relative;
+  }
+
+  .sobre-nos-text {
+    max-width: 40%;
+  }
+
+  .sobre-nos-text .title {
+    font-size: 30px;
+  }
+
+  .sobre-nos-text p {
+    font-size: 16px;
+  }
+
+  .sobre-nos-btn {
+    font-size: 15px;
+    padding: 10px 35px;
+  }
+
+  .sobre-nos-image {
+    max-width: 40%;
+  }
+
+  .sobre-nos-image img {
+    width: 260px;
+  }
+}
+
+/* Desktop Grande: acima de 1370px */
+@media (min-width: 1371px) {
+  .sobre-nos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 60px;
+    position: relative;
+  }
+
+  .sobre-nos-text {
+    max-width: 40%;
+  }
+
+  .sobre-nos-text .title {
+    font-size: 34px;
+  }
+
+  .sobre-nos-text p {
+    font-size: 17px;
+  }
+
+  .sobre-nos-btn {
+    font-size: 16px;
+    padding: 12px 40px;
+  }
+
+  .sobre-nos-image {
+    max-width: 40%;
+  }
+
+  .sobre-nos-image img {
+    width: 280px;
   }
 }
