@@ -48,21 +48,22 @@
 }
 
 .sobre-nos-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 47px;
-  background-color: #24294E;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: Roboto;
+    padding: 16px 32px;
+    display: inline-block;
+    background: linear-gradient(#0E123B, #1a1f4d);
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+    text-transform: uppercase;
+    font: 600 1.125rem/1.35 "Roboto", sans-serif;
+    max-width: max-content;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 16px;
 }
 
 .sobre-nos-btn:hover {
-  background-color: #1a1f3c;
+  background: linear-gradient(#0E123B, #121638);
 }
 
 .sobre-nos-image {
