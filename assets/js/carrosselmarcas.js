@@ -57,7 +57,7 @@ export default function initCarrosselMarcas(){
   function startAutoScroll() {
     stopAutoScroll();
     autoScroll = setInterval(() => {
-      container.scrollLeft += 2; // ← VELOCIDADE DO CARROSSEL
+      container.scrollLeft += 1; // ← VELOCIDADE DO CARROSSEL
   
       if (container.scrollLeft >= track.scrollWidth / 2) {
         container.scrollLeft = container.scrollLeft - track.scrollWidth / 2;
@@ -66,7 +66,7 @@ export default function initCarrosselMarcas(){
       if (container.scrollLeft <= 0) {
         container.scrollLeft = container.scrollLeft + track.scrollWidth / 2;
       }
-    }, 20); // ← INTERVALO 
+    }, 15); // ← INTERVALO 
   }
   
   function stopAutoScroll() {
