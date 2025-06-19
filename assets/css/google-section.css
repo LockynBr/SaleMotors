@@ -27,9 +27,9 @@ body {
 .google-header {
   background: linear-gradient(90deg, #10133b, #1e2060);
   color: white;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: "Mulish";
   margin-top: 164px;
@@ -41,10 +41,11 @@ body {
   padding-left: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 3rem;
   align-items: center;
-  margin-left: 80px;
+  margin-left: 360px;
   margin-right: 80px;
+  max-width: 1200px;
 }
 
 .info-block {
@@ -65,6 +66,8 @@ body {
 
 .info-block p {
   font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
   color: #334155;
 }
 
@@ -84,6 +87,22 @@ body {
 .feature-icon {
   width: 80px;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 1366px) {
+  .content-grid {
+    padding: 2rem 1.5rem;
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+
+  .google-header {
+    font-size: 2.3rem;
+  }
+
+  .info-block h2 {
+    text-align: left;
+  }
 }
 
 @media (max-width: 1024px) {

@@ -23,9 +23,9 @@ body {
   margin-top: 164px;
   background: linear-gradient(90deg, #10133b, #1e2060);
   color: white;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: "Mulish";
 }
@@ -38,6 +38,8 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: center;
+  max-width: 1600px;
+  margin-left: 175px;
 }
 
 .info-block {
@@ -59,6 +61,8 @@ body {
 
 .info-block p {
   font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
   color: #334155;
 }
 
@@ -95,6 +99,8 @@ body {
     grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
     margin-bottom: 50px;
+    margin-left: 0px;
+    width: 100%;
   }
 
   .content-grid .info-block {
@@ -144,6 +150,8 @@ body {
     padding: 1.8rem 1.2rem;
     justify-items: center;
     text-align: center;
+    margin-left: 0px;
+    width: 100%;
   }
 
   .info-block {
@@ -177,8 +185,15 @@ body {
   }
 
   .background-icon {
-    width: 28%;
+    width: 10%;
     margin-bottom: -250px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .content-grid {
+    margin-left: 0px;
+    width: 100%;
   }
 }
 
@@ -195,6 +210,8 @@ body {
     padding: 1.5rem 1rem;
     justify-items: center;
     text-align: center;
+    margin-left: 0px;
+    width: 100%;
   }
 
   .info-block {
@@ -244,6 +261,8 @@ body {
     grid-template-columns: 1fr 1fr;
     padding: 2.5rem 50px;
     margin-bottom: 50px;
+    margin-left: 0px;
+    width: 100%;
   }
 
   .content-grid .info-block {

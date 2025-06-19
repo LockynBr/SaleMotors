@@ -7,7 +7,6 @@
     min-height: 50vh;
     margin-top: 8px;
     margin-top: 60px;
-    width: 100%;
     background-color: #0E123B;
   }
 
@@ -15,10 +14,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 50px;
+    max-width: 1200px;
   }
 
   .counter {
-    font-size: 64px;
+    font-size: 80px;
     font-weight: bold;
     color: white;
   }
