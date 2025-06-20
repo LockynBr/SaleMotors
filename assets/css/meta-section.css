@@ -38,7 +38,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   max-width: 1600px;
-  margin-left: 175px;
+  margin: auto;
 }
 
 .info-block {

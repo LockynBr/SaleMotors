@@ -39,7 +39,7 @@ body {
   gap: 1rem;
   align-items: center;
   max-width: 1600px;
-  margin-left: 175px;
+  margin: auto;
 }
 
 .info-block {

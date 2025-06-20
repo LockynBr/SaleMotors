@@ -38,8 +38,8 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: center;
+  margin: auto;
   max-width: 1600px;
-  margin-left: 175px;
 }
 
 .info-block {
@@ -150,7 +150,7 @@ body {
     padding: 1.8rem 1.2rem;
     justify-items: center;
     text-align: center;
-    margin-left: 0px;
+    margin-bottom: 100px;
     width: 100%;
   }
 
