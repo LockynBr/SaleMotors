@@ -35,15 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initCarrosselMarcas();
   }
 
-  // Inicialização do Contador de Números (Numero Faixa)
-  // Você precisa saber o seletor exato que 'initNumeroFaixa' usa.
-  // Se for '.counter-section', por exemplo:
-  const counterSection = document.querySelector('.counter-section');
-  if (counterSection) {
-    initNumeroFaixa();
-  }
-  // Se 'initNumeroFaixa' usa múltiplos seletores, você deve verificar todos.
-
   // Inicializações que provavelmente existem em todas as páginas:
   initMenuMobile();
   initDropdownMenu();
@@ -51,3 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initMenuRolagem(); // Seu menu-navbar existe em campanhas-google.html, então esta deve funcionar.
 });
 initFunil();
+initNumeroFaixa();
