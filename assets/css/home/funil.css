@@ -285,7 +285,7 @@ section.container-funil {
   }
 
   .box {
-    width: 100px;
+    width: 110px;
     height: 80px;
   }
 
@@ -294,7 +294,7 @@ section.container-funil {
   }
 
   .box p {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .result-content img {
@@ -307,14 +307,14 @@ section.container-funil {
   }
 }
 
-@media (max-width: 581px) {
+@media (max-width: 627px) {
   .container-content h2 {
     font-size: 20px;
   }
 
   .box {
-    width: 90px;
-    height: 75px;
+    width: 95px;
+    height: 80px;
   }
 
   .box img {
@@ -322,7 +322,7 @@ section.container-funil {
   }
 
   .box p {
-    font-size: 7px;
+    font-size: 7.8px;
   }
 
   .result-content img {
@@ -335,30 +335,9 @@ section.container-funil {
   }
 }
 
-@media (max-width: 537px) {
-  .box {
-    width: 80px;
-    height: 70px;
-  }
 
-  .box img {
-    width: 24px;
-  }
 
-  .box p {
-    font-size: 6px;
-  }
-
-  .result-content img {
-    width: 120px;
-  }
-
-  .result-content p {
-    font-size: 9px;
-  }
-}
-
-@media (max-width: 492px) {
+@media (max-width: 559px) {
   .box-group {
     display: flex;
     flex-wrap: wrap;
@@ -367,8 +346,8 @@ section.container-funil {
   }
   
   .box {
-    width: 80px;
-    height: 70px;
+    width: 95px;
+    height: 85px;
   }
 
   .box img {
@@ -376,7 +355,8 @@ section.container-funil {
   }
 
   .box p {
-    font-size: 6px;
+    font-size: 8px;
+    padding: 2px;
   }
 
   .result-content img {

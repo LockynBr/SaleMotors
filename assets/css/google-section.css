@@ -17,6 +17,13 @@ body {
   z-index: 0;
 }
 
+.background-wrapper2 {
+  position: relative;
+  z-index: 0;
+  margin-left: auto;
+  transform: scaleX(-1);
+}
+
 .background-icon {
   position: absolute;
   z-index: -1;
@@ -44,7 +51,8 @@ body {
   gap: 3rem;
   align-items: center;
   margin: auto;
-  max-width: 1200px;
+  margin-left: 310px;
+  max-width: 1400px;
 }
 
 .info-block {
@@ -88,7 +96,7 @@ body {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1919px) {
   .content-grid {
     padding: 2rem 1.5rem;
     margin-right: 200px;
