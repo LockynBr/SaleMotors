@@ -2,14 +2,14 @@
 @import "../global/utilitario.css";
 
 section.container-funil {
-  background-color: #0E123B;
+  background-color: #E6E7E8;
   height: 860px;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 30px;
   margin-top: 64px;
 }
 
 .container-content {
-  max-width: 1004px; 
+  max-width: 1200px; 
   margin: 0 auto; 
   padding-top: 32px;
   display: flex;
@@ -22,15 +22,21 @@ section.container-funil {
   font-family: 'Mulish';
   font-size: 36px;
   font-weight: bold;
-  color: #fff;
-  margin-left: 20px;
+  color: #10133B;
   max-width: 600px;
 }
 
 .box-group {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.box:hover {
+  background-color: #CFCFCF;
+  transform: scale(1.05);   
+  transition: all 0.3s ease;
+  color: white;
 }
 
 .box {
@@ -38,15 +44,14 @@ section.container-funil {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0;
   width: 211px;
   height: 136px;
   background-color: #E6E7E8;
-  margin: 20px;
   border-radius: 10px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   border: none;
+  margin: 40px 0px 15px 0px;
 }
 
 .box img {
@@ -58,8 +63,8 @@ section.container-funil {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  color: #10133B;
 }
-
 
 .box-itens {
   display: flex;
@@ -79,8 +84,8 @@ section.container-funil {
   justify-content: center;
   align-items: baseline;
   margin: auto;
-  background-color: #0E123B;
-  width: 965px;
+  background-color: #E6E7E8;
+  width: 100%;
   height: 400px;
   border-radius: 10px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
@@ -88,19 +93,42 @@ section.container-funil {
 
 .result-content img {
   width: 300px;
-  /* margin: 20px 10px 10px 15px; */
-}
-
-.result-content h2 {
-  margin: 20px 10px 10px 10px;
 }
 
 .result-content p {
   font-family: 'Roboto';
-  color: #fff;
-  /* margin-top: 10px; */
-  width: 600px;
+  color: #000;
+  width: 580px;
   text-align: justify;
+  font-weight: 500;
+}
+
+.box {
+  transition: background-color 0.3s ease;
+}
+
+.box.ativo p {
+  color: white;
+}
+
+.box.ativo img {
+  filter: none;
+}
+
+.box.ativo {
+  position: relative;
+}
+
+.box.ativo::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 18px;
+  border-style: solid;
+  border-color: var(--bg-cor) transparent transparent transparent;
+  filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.2));
 }
 
 @media (max-width: 1280px) {
