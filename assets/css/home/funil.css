@@ -33,9 +33,9 @@ section.container-funil {
 }
 
 .box:hover {
-  background-color: #CFCFCF; /* ou qualquer cor que quiser */
-  transform: scale(1.05);    /* leve aumento no tamanho */
-  transition: all 0.3s ease; /* suaviza o efeito */
+  background-color: #CFCFCF;
+  transform: scale(1.05);   
+  transition: all 0.3s ease;
   color: white;
 }
 

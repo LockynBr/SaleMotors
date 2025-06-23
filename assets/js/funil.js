@@ -30,8 +30,8 @@ export default function initFunil() {
     function ativarBotao(index) {
       buttons.forEach((btn) => {
         btn.classList.remove('ativo');
-        btn.style.backgroundColor = '#E6E7E8'; // cor padrão
-        btn.style.removeProperty('--bg-cor'); // remove variável anterior
+        btn.style.backgroundColor = '#E6E7E8';
+        btn.style.removeProperty('--bg-cor');
         const img = btn.querySelector('img');
         img.src = btn.dataset.iconDefault;
       });
@@ -40,7 +40,7 @@ export default function initFunil() {
       button.classList.add('ativo');
       button.querySelector('img').src = button.dataset.iconAtivo;
       button.style.backgroundColor = button.dataset.bg;
-      button.style.setProperty('--bg-cor', button.dataset.bg); // seta a variável CSS
+      button.style.setProperty('--bg-cor', button.dataset.bg);
 
       resultImg.src = resultados[index].img;
       resultText.textContent = resultados[index].texto;
@@ -50,7 +50,6 @@ export default function initFunil() {
       button.addEventListener('click', () => ativarBotao(index));
     });
 
-    // Ativa o primeiro botão automaticamente
     ativarBotao(0);
   });
 }
