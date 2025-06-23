@@ -1,4 +1,4 @@
-import debounce from './debounce.js'; // Assuming debounce.js is correctly linked
+import debounce from './debounce.js';
 
 export class Slide {
   constructor(slide, wrapper) {
@@ -6,12 +6,12 @@ export class Slide {
     this.wrapper = document.querySelector(wrapper);
     this.dist = { finalPosition: 0, startX: 0, movement: 0 };
     this.activeClass = 'active';
-    this.changeEvent = new Event('changeEvent'); // Still useful for external listeners if needed
-    this.transitioning = false; // Add a flag to prevent rapid slide changes
+    this.changeEvent = new Event('changeEvent');
+    this.transitioning = false;
   }
 
   transition(active) {
-    this.slide.style.transition = active ? 'transform .3s ease-in-out' : 'none'; // Added ease-in-out
+    this.slide.style.transition = active ? 'transform .3s ease-in-out' : 'none';
   }
 
   moveSlide(distX) {
@@ -25,7 +25,7 @@ export class Slide {
   }
 
   onStart(event) {
-    if (this.transitioning) return; // Prevent start if transitioning
+    if (this.transitioning) return;
     let movetype;
     if (event.type === 'mousedown') {
       event.preventDefault();
@@ -37,7 +37,7 @@ export class Slide {
     }
     this.wrapper.addEventListener(movetype, this.onMove);
     this.transition(false);
-    this.stopAutoSlide(); // Stop auto-slide when user interacts
+    this.stopAutoSlide();
   }
 
   onMove(event) {
@@ -52,18 +52,18 @@ export class Slide {
     this.dist.finalPosition = this.dist.movePosition;
     this.transition(true);
     this.changeSlideOnEnd();
-    this.autoSlide(3000); // Restart auto-slide after user interaction
+    this.autoSlide(3000);
   }
 
   changeSlideOnEnd() {
-    if (this.dist.movement > 120) { // Increased threshold slightly for better control
+    if (this.dist.movement > 120) {
       this.activeNextSlide();
-    } else if (this.dist.movement < -120) { // Increased threshold slightly
+    } else if (this.dist.movement < -120) {
       this.activePrevSlide();
     } else {
       this.changeSlide(this.index.active);
     }
-    this.dist.movement = 0; // Reset movement after slide change
+    this.dist.movement = 0;
   }
 
   addSlideEvents() {
@@ -73,86 +73,65 @@ export class Slide {
     this.wrapper.addEventListener('touchend', this.onEnd);
   }
 
-  // --- Infinite Slide Logic Start ---
   slidePosition(slide) {
     const margin = (this.wrapper.offsetWidth - slide.offsetWidth) / 2;
     return -(slide.offsetLeft - margin);
   }
 
   slidesConfig() {
-    // Clone first and last slides for infinite effect
-    // We do this here so the slideArray includes the clones
-    const originalChildren = [...this.slide.children]; // Get original slides before cloning
+    const originalChildren = [...this.slide.children];
     if (originalChildren.length > 0) {
       const firstClone = originalChildren[0].cloneNode(true);
       const lastClone = originalChildren[originalChildren.length - 1].cloneNode(true);
-
-      // Add clones to the DOM
       this.slide.appendChild(firstClone);
       this.slide.prepend(lastClone);
     }
-
-    // Recalculate slideArray with clones
     this.slideArray = [...this.slide.children].map((element) => {
       const position = this.slidePosition(element);
       return { position, element };
     });
-
-    // Adjust slide width calculation on resize if needed (though flex-shrink handles much of it)
-    // For initial position, we need to know the width of the cloned elements as well
   }
 
   slidesIndexNav(index) {
-    // The actual active slides are from 1 to this.slideArray.length - 2
-    // Index 0 is lastClone, last index is firstClone
-    const lastOriginal = this.slideArray.length - 2; // Index of the last *original* slide
+    const lastOriginal = this.slideArray.length - 2;
     this.index = {
-      prev: index === 0 ? undefined : index - 1, // Will handle jump in changeSlide
+      prev: index === 0 ? undefined : index - 1,
       active: index,
-      next: index === lastOriginal + 1 ? undefined : index + 1, // Will handle jump in changeSlide
-      originalLength: lastOriginal // Store original length for reference
+      next: index === lastOriginal + 1 ? undefined : index + 1,
+      originalLength: lastOriginal
     };
   }
 
   changeSlide(index) {
-    this.stopAutoSlide(); // Stop auto-slide temporarily
-    this.transitioning = true; // Set flag to true
-
+    this.stopAutoSlide();
+    this.transitioning = true;
     const activeSlide = this.slideArray[index];
     this.moveSlide(activeSlide.position);
     this.slidesIndexNav(index);
     this.dist.finalPosition = activeSlide.position;
     this.changeActiveClass();
     this.wrapper.dispatchEvent(this.changeEvent);
-
-    // After transition ends, handle the jump for infinite loop
     this.slide.addEventListener('transitionend', () => {
-      this.transitioning = false; // Allow interaction again
-      this.autoSlide(3000); // Restart auto-slide
-
-      // If moved to the first clone, jump to actual first slide
+      this.transitioning = false;
+      this.autoSlide(3000);
       if (this.index.active === this.slideArray.length - 1) {
-        this.transition(false); // No transition for the jump
-        this.changeSlide(1); // Jump to the actual first slide (index 1)
-        this.dist.finalPosition = this.slideArray[1].position; // Update final position
+        this.transition(false);
+        this.changeSlide(1);
+        this.dist.finalPosition = this.slideArray[1].position;
+      } else if (this.index.active === 0) {
+        this.transition(false);
+        this.changeSlide(this.slideArray.length - 2);
+        this.dist.finalPosition = this.slideArray[this.slideArray.length - 2].position;
       }
-      // If moved to the last clone, jump to actual last slide
-      else if (this.index.active === 0) {
-        this.transition(false); // No transition for the jump
-        this.changeSlide(this.slideArray.length - 2); // Jump to actual last slide (index length - 2)
-        this.dist.finalPosition = this.slideArray[this.slideArray.length - 2].position; // Update final position
-      }
-    }, { once: true }); // Ensure this listener runs only once per transition
+    }, { once: true });
   }
 
   changeActiveClass() {
-   
     this.slideArray.forEach((item, idx) => {
-      if (idx > 0 && idx < this.slideArray.length - 1) { 
+      if (idx > 0 && idx < this.slideArray.length - 1) {
         item.element.classList.remove(this.activeClass);
       }
     });
-    
     if (this.index.active > 0 && this.index.active < this.slideArray.length - 1) {
       this.slideArray[this.index.active].element.classList.add(this.activeClass);
     }
@@ -160,21 +139,19 @@ export class Slide {
 
   activePrevSlide() {
     if (this.transitioning) return;
-   
     this.changeSlide(this.index.active - 1);
   }
 
   activeNextSlide() {
     if (this.transitioning) return;
-   
     this.changeSlide(this.index.active + 1);
   }
+
   onResize() {
     setTimeout(() => {
-      this.slidesConfig(); 
+      this.slidesConfig();
       const originalIndex = this.index.active > 0 && this.index.active < this.slideArray.length - 1
         ? this.index.active : 1;
-
       this.changeSlide(originalIndex);
     }, 1000);
   }
@@ -187,10 +164,8 @@ export class Slide {
     this.onStart = this.onStart.bind(this);
     this.onMove = this.onMove.bind(this);
     this.onEnd = this.onEnd.bind(this);
-
     this.activePrevSlide = this.activePrevSlide.bind(this);
     this.activeNextSlide = this.activeNextSlide.bind(this);
-
     this.onResize = debounce(this.onResize.bind(this), 200);
   }
 
@@ -213,9 +188,8 @@ export class Slide {
     this.slidesConfig();
     this.addResizeEvent();
     this.addVisibilityEvent();
-
     this.changeSlide(1);
-    this.autoSlide(3000); 
+    this.autoSlide(3000);
     return this;
   }
 }
@@ -226,20 +200,16 @@ export default class SlideNav extends Slide {
   }
 
   autoSlide(interval = 3000) {
-    this.stopAutoSlide();
-    this.autoSlideInterval = setInterval(() => {
-      if (this.index.active < this.slideArray.length - 1) {
-        this.activeNextSlide();
-      } else {
-        this.changeSlide(1);
-      }
-    }, interval);
-  }
+  this.stopAutoSlide();
+  this.autoSlideInterval = setInterval(() => {
+    this.activeNextSlide();
+  }, interval);
+}
 
   stopAutoSlide() {
     if (this.autoSlideInterval) {
       clearInterval(this.autoSlideInterval);
-      this.autoSlideInterval = null; 
+      this.autoSlideInterval = null;
     }
   }
 
