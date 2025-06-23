@@ -1,15 +1,13 @@
-// script.js
 import SlideNav from './slide.js';
 import initMenuMobile from './menuMobile.js';
 import initDropdownMenu from './menu.js';
 import initCarrosselMarcas from './carrosselmarcas.js';
-import initNumeroFaixa from './numero-faixa.js'; // Importar o script
+import initNumeroFaixa from './numero-faixa.js';
 import initContato from './contato.js';
 import initMenuRolagem from './menuRolagem.js';
 import initFunil from './funil.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Inicializações do SlideNav
   const slideElement = document.querySelector('.slide');
   const slideWrapperElement = document.querySelector('.slide-wrapper');
   if (slideElement && slideWrapperElement) {
@@ -20,26 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (prevArrow && nextArrow) {
       slide.addArrow('.prev', '.next');
     }
-    const customControls = document.querySelector('.custom-controls');
-    if (customControls) {
-      slide.addControl('.custom-controls');
-    } else {
-      slide.addControl();
-    }
   }
 
-  // Inicialização do Carrossel de Marcas
   const carouselTrack = document.getElementById('carousel-track');
   const carouselContainer = document.getElementById('carousel-container');
   if (carouselTrack && carouselContainer) {
     initCarrosselMarcas();
   }
 
-  // Inicializações que provavelmente existem em todas as páginas:
   initMenuMobile();
   initDropdownMenu();
   initContato();
-  initMenuRolagem(); // Seu menu-navbar existe em campanhas-google.html, então esta deve funcionar.
+  initMenuRolagem();
 });
+
 initFunil();
 initNumeroFaixa();
