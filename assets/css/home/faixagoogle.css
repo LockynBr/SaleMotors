@@ -1,4 +1,5 @@
-@import "assets/css/global.css";
+@import "../global/global.css";
+@import "../global/utilitario.css";
 
 .faixa-google-partner {
   background: linear-gradient(to right, #10133B, #1E2060);
@@ -32,13 +33,13 @@
   font-size: 32px;
   font-weight: bold;
   margin: 0px 90px;
-  font-family: 'Mulish', sans-serif;
+  font-family: var(--font-mulish);
 }
 
 .container-texto p {
   width: 430px;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   line-height: 1.5;
   text-align: justify;
 }

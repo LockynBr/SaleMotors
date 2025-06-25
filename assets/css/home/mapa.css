@@ -1,4 +1,5 @@
 @import "../global/global.css";
+@import "../global/utilitario.css";
 
 .mapa-container {
   width: 100%; /* Garante que vá de ponta a ponta */
@@ -10,7 +11,7 @@
 
 .title {
   font-size: 36px;
-  font-family: 'Mulish';
+  font-family: var(--font-mulish);
   margin-bottom: 30px;
   color: #10133B;
   font-weight: bold;
@@ -54,7 +55,7 @@
 }
 
 .regiao {
-  font-family: 'Mulish';
+  font-family: var(--font-mulish);
   font-size: 18px;
   color: #0E123B;
   position: relative;
