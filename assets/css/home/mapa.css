@@ -8,11 +8,6 @@
   margin-top: 32px;
 }
 
-.container-conteudo {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .title {
   font-size: 36px;
   font-family: 'Mulish';
@@ -53,7 +48,7 @@
 
 .mapa-img {
   object-fit: contain;
-  max-width: 420px;
+  width: 500px;
   height: auto;
   display: block;
 }
