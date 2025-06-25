@@ -7,7 +7,51 @@
     margin: 0 auto;
 } */
 
-:root{
-    --font-mulish: "Mulish", sans-serif;
-    --font-poppins: "Poppins", sans-serif;
+:root {
+  /* Cores principais */
+  --color-primary: #10133B;
+  --color-secondary: #0E123B;
+  --color-dark-blue: #1E2060;
+  --color-light-bg: #E6E7E8;
+  --color-white: #FFFFFF;
+  --color-gray: #C2C2C2;
+  --color-light-gray: #F7F7F7;
+  --color-border: #E0E0E0;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Gradientes */
+  --gradient-primary: linear-gradient(#0E123B, #1a1f4d);
+  --gradient-overlay: linear-gradient(to top, rgba(16, 19, 59, 0.8), transparent);
+
+  /* Fontes */
+  --font-primary: 'Mulish', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  /* Tamanhos de fontes */
+  --font-size-xs: 13px;
+  --font-size-sm: 16px;
+  --font-size-md: 20px;
+  --font-size-lg: 26px;
+  --font-size-xl: 36px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+  --radius-xl: 25px;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+
+  /* Espaçamentos */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 90px;
+
+  /* Outros */
+  --max-width: 1200px;
 }
