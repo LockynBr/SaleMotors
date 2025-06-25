@@ -19,7 +19,7 @@ section.container-funil {
 }
 
 .container-content h2 {
-  font-family: 'Mulish';
+  font-family: var(--font-mulish);
   font-size: 36px;
   font-weight: bold;
   color: #10133B;
@@ -59,7 +59,7 @@ section.container-funil {
 }
 
 .box p {
-  font-family: 'Mulish';
+  font-family: var(--font-mulish);
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -96,7 +96,7 @@ section.container-funil {
 }
 
 .result-content p {
-  font-family: 'Roboto';
+  font-family: var(--font-roboto);
   color: #000;
   width: 580px;
   text-align: justify;
