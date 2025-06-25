@@ -1,4 +1,5 @@
 @import "../global/global.css";
+@import "../global/utilitario.css";
 
 .mapa-container {
   width: 100%; /* Garante que vá de ponta a ponta */
@@ -8,14 +9,9 @@
   margin-top: 32px;
 }
 
-.container-conteudo {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .title {
   font-size: 36px;
-  font-family: 'Mulish';
+  font-family: var(--font-mulish);
   margin-bottom: 30px;
   color: #10133B;
   font-weight: bold;
@@ -53,13 +49,13 @@
 
 .mapa-img {
   object-fit: contain;
-  max-width: 420px;
+  width: 500px;
   height: auto;
   display: block;
 }
 
 .regiao {
-  font-family: 'Mulish';
+  font-family: var(--font-mulish);
   font-size: 18px;
   color: #0E123B;
   position: relative;
