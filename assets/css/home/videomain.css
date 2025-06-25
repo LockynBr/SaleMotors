@@ -1,120 +1,26 @@
-.videomain-container{
-  margin-top: 164px;
-}
-
-.videomain-card {
+.hero-section {
   position: relative;
-  background: linear-gradient(to top, rgba(16, 19, 59, 0.8), transparent);
-  color: #ffffff;
-  border-radius: 1rem;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 4rem;
-  margin: 0px 64px;
-  height: 550px;
 }
 
-.videomain-background-video {
+.hero-video {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  z-index: -1;
-  animation: fadeIn 1s ease-in-out;
+  object-fit: cover;
+  z-index: 0;
 }
 
-.videomain-title {
-  font-family: var(--font-poppins);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 3rem;
-  max-width: 40rem;
-  margin: 0;
-
-}
-
-.videomain-text{
-  font-family: var(--font-mulish);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.videomain-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-size: 0.875rem;
-}
-
-.videomain-footer p {
-  margin-bottom: 1rem;
-  margin-top: 16px;
-  font-family: var(--font-mulish);
-}
-
-.videomain-highlight {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-
-.videomain-highlight:hover {
-  text-decoration: none;
-}
-
-.videomain-recommendation {
-  text-align: right;
-}
-
-.videomain-recommendation-title {
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-
-.videomain-partners {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.videomain-partner-logo {
-  width: 7rem;
-}
-
-@media (max-width: 900px){
-  .videomain-card{
-    margin: 0 32px;
-    margin-top: 16px;
-  }
-  .videomain-container{
-    margin-top: 120px;
-  }
-}
-
-/* responsivo */
-@media (max-width: 768px) {
-  .videomain-card {
-    height: 200px;
-    padding: 1.5rem;
-    margin: 0 64px;
-    margin-top: 16px;
-  }
-
-  .videomain-footer p{
-    margin-top: 0px;
-  }
-  
-  .videomain-text{
-    display: none;
-  }
-  .videomain-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 500px){
-  .videomain-card{
-    margin: 0 8px;
-  }
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(16, 19, 59, 0.8), transparent);
+  z-index: 1;
 }
