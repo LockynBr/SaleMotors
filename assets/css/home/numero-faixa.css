@@ -1,5 +1,5 @@
   .counter-section {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-poppins);
     display: flex;
     justify-content: center;
     align-items: center;
