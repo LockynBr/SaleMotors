@@ -9,7 +9,6 @@
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
 :root {
   /* Cores principais */
   --color-primary: #10133B;
@@ -58,10 +57,3 @@
   /* Outros */
   --max-width: 1200px;
 }
-=======
-:root{
-    --font-mulish: "Mulish", sans-serif;
-    --font-poppins: "Poppins", sans-serif;
-    --font-roboto: "Roboto", sans-serif;
-}
->>>>>>> 07f6aa899533d07753cff93a351045d1af22d2c1
