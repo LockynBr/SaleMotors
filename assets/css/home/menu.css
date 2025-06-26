@@ -43,7 +43,7 @@
 .menu-list a {
   display: inline-block;
   padding: 12px 0;
-  font-family: 'Mulish';
+  font-family: var(--font-mulish);
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -163,7 +163,7 @@
     padding: .5rem 1rem;
     border-radius: 4px;
     text-transform: uppercase;
-    font-family: "Mulish", sans-serif;
+    font-family: var(--font-mulish);
     font-weight: bold;
     color: white;
     cursor: pointer;

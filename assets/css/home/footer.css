@@ -9,7 +9,7 @@ footer {
   row-gap: 30px;
   column-gap: 40px;
   position: relative;
-  font-family: 'Roboto';
+  font-family: var(--font-roboto);
 }
 
 .logo {

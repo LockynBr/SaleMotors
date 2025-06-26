@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
 }
 
 body {
@@ -27,7 +27,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: "Mulish";
+  font-family: var(--font-mulish);
 }
 
 .content-grid {
@@ -50,7 +50,7 @@ body {
   color: #10133B;
   font-size: 2rem;
   margin-bottom: 0.75rem;
-  font-family: "Mulish";
+  font-family: var(--font-mulish);
 }
 
 .info-block h2::before {
