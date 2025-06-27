@@ -25,9 +25,16 @@ body {
   color: white;
   padding: 5rem 2rem;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: bold;
-  font-family: var(--font-mulish);
+  font-family: 'terminator';
+}
+
+.monitoria-header span {
+  font-size: 3rem;
+  font-family: 'future-earth';
+  margin-left: 2px;
+  margin-right: -2px;
 }
 
 .content-grid {
@@ -49,9 +56,9 @@ body {
 
 .info-block h2 {
   color: #10133B;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.75rem;
-  font-family: var(--font-mulish);
+  font-family: 'terminator';
 }
 
 .info-block h2::before {

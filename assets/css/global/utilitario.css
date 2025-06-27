@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Poppins:wght@400;700&family=Roboto:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: 'terminator';
+  src: url('../fonts/terminator-real-nfi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'future-earth';
+  src: url('../fonts/future-earth.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .container{
     max-width: 1200px;
