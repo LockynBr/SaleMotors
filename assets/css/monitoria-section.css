@@ -103,6 +103,10 @@ body {
     padding: 1.5rem 1rem;
   }
 
+  .monitoria-header span {
+  font-size: 1.5rem;
+  }
+
   .content-grid {
     grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
@@ -152,6 +156,10 @@ body {
     padding: 2rem 1rem;
   }
 
+  .monitoria-header span {
+  font-size: 1.7rem;
+  }
+
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -169,7 +177,7 @@ body {
 
   .info-block h2 {
     font-size: 1.1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .info-block p {
@@ -205,6 +213,10 @@ body {
     padding: 1.5rem 1rem;
   }
 
+  .monitoria-header span {
+  font-size: 1.5rem;
+  }
+
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -222,7 +234,7 @@ body {
 
   .info-block h2 {
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .info-block p {
@@ -257,6 +269,10 @@ body {
   .monitoria-header {
     font-size: 1.5rem;
     padding: 2.5rem 2rem;
+  }
+
+  .monitoria-header span {
+  font-size: 2.2rem;
   }
 
   .content-grid {
@@ -306,6 +322,10 @@ body {
     padding: 3rem 2.5rem;
   }
 
+.monitoria-header span {
+  font-size: 2.6rem;
+}
+
   .content-grid {
     grid-template-columns: 1fr 1fr;
     padding: 3rem 120px;
@@ -348,6 +368,10 @@ body {
     font-size: 2rem;
     padding: 3rem 3rem;
   }
+
+.monitoria-header span {
+  font-size: 2.8rem;
+}
 
   .content-grid {
     padding: 3rem 120px;
@@ -395,38 +419,5 @@ body {
 
   .feature-icon {
     width: 85px;
-  }
-}
-
-/* ==================== DESKTOPS GRANDES (1920px+) ==================== */
-@media (min-width: 1920px) {
-  .monitoria-header {
-    font-size: 2.2rem;
-    padding: 3rem 3rem;
-  }
-
-  .content-grid {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-
-  .info-block {
-    margin-left: 190px;
-  }
-
-  .info-block h2 {
-    font-size: 2rem;
-  }
-
-  .info-block p {
-    font-size: 1.3rem;
-  }
-
-  .visual-element img {
-    width: 210px;
-  }
-
-  .feature-icon {
-    width: 90px;
   }
 }
