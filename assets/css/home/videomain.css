@@ -37,8 +37,14 @@
   margin: 0 0 20px;
   line-height: 1.2;
   font-family: 'terminator';
+  letter-spacing: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
+#span-tittle{
+  font-family: 'future-earth';
+  font-size: 88px;
+  margin-left: 5px;
+}
 .videomain-text {
   font-size: 20px;
   max-width: 900px;
@@ -46,12 +52,14 @@
   font-family: var(--font-roboto);
   font-weight: 500;
   line-height: 1.4;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .videomain-footer p {
   font-size: 18px;
   font-family: var(--font-roboto);
   font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .videomain-highlight {

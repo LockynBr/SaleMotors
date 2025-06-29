@@ -43,7 +43,7 @@ body {
 }
 
 .google-header span {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-family: 'future-earth';
   margin-left: 2px;
   margin-right: -2px;
@@ -58,7 +58,6 @@ body {
   gap: 3rem;
   align-items: center;
   margin: auto;
-  margin-left: 310px;
   max-width: 1400px;
 }
 
@@ -109,23 +108,15 @@ body {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 1919px) {
-  .content-grid {
-    padding: 2rem 1.5rem;
-    margin-right: 200px;
-    margin-left: 200px;
-  }
-
+@media (max-width: 1366px) {
   .google-header {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
-  .info-block h2 {
-    text-align: left;
+  .google-header span {
+    font-size: 2.8rem;
   }
-}
 
-@media (max-width: 1024px) {
   .content-grid {
     padding: 2rem 1.5rem;
     margin-left: 0 !important;
@@ -148,6 +139,11 @@ body {
     font-size: 1.3rem;
     padding: 2rem 1rem;
   }
+
+  .google-header span {
+    font-size: 1.8rem;
+  }
+
   .content-grid {
     padding: 2rem 1rem;
     grid-template-columns: 1fr;
@@ -162,6 +158,11 @@ body {
     font-size: 1.2rem;
     text-align: left;
   }
+  
+  .info-block h2 span {
+    font-size: 1.7rem;
+  }
+
   .info-block p {
     font-size: 0.95rem;
   }
@@ -179,12 +180,22 @@ body {
     font-size: 1.1rem;
     padding: 1.5rem 1rem;
   }
+
+  .google-header span{
+    font-size: 1.6rem;
+  }
+
   .content-grid {
     padding: 1.5rem 1rem;
   }
   .info-block h2 {
     font-size: 1rem;
     text-align: left;
+  }
+  .info-block h2 span {
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    margin-left: 1px;
   }
   .info-block p {
     font-size: 0.9rem;

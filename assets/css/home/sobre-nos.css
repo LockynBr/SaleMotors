@@ -1,7 +1,10 @@
 .sobre-nos-container {
   margin-top: 100px;
   display: flex;
+  flex-direction: row;
+  gap: 60px;
   align-items: center;
+  position: relative;
   justify-content: center;
   background-size: 1000px;
   background-image: url('../../images/deco/fundo.png');
@@ -9,15 +12,16 @@
   background-repeat: repeat;
   border-radius: 10px;
   height: 60vh;
+  padding: 80px 60px;
 }
 
 .sobre-nos-text {
-  max-width: 27.1%;
+  max-width: 40%;
   position: relative;
 }
 
 .sobre-nos-container .sobre-nos-text .title {
-  font-size: 35px;
+  font-size: 31px;
   color: #0c1022;
   font-weight: bold;
   position: relative;
@@ -29,8 +33,9 @@
 
 .sobre-nos-text .title span {
   font-family: 'future-earth';
-  font-size: 48px;
-  margin-left: 4px;
+  font-size: 44px;
+  margin-left: 2px;
+  margin-right: -2px;
 }
 
 .sobre-nos-text .title::before {
@@ -42,12 +47,12 @@
   position: absolute;
   transform: translateX(35%);
   left: 0;
-  top: 50%;
+  top: 55%;
   z-index: -1;
 }
 
 .sobre-nos-text p {
-  font-size: 19px;
+  font-size: 17px;
   font-family: var(--font-roboto);
   font-weight: 500;
   text-align: justify;
@@ -57,14 +62,14 @@
 }
 
 .sobre-nos-btn {
-    padding: 16px 32px;
+    padding: 12px 40px;
     display: inline-block;
     background: linear-gradient(#0E123B, #1a1f4d);
     border-radius: 4px;
     border: none;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
     text-transform: uppercase;
-    font: 600 1.125rem/1.35 var(--font-roboto);
+    font: 600 16px var(--font-roboto);
     max-width: max-content;
     cursor: pointer;
     color: #fff;
@@ -250,10 +255,13 @@
   .sobre-nos-image img {
     width: 240px;
   }
+
+  .sobre-nos-icon-right {
+    right: 0px;
+  }
 }
 
-/* Desktop Médio: 1025px até 1370px */
-@media (min-width: 1201px) and (max-width: 1470px) {
+@media (min-width: 1201px) and (max-width: 1540px) {
   .sobre-nos-container {
     display: flex;
     flex-direction: row;
@@ -288,42 +296,8 @@
   .sobre-nos-image img {
     width: 260px;
   }
-}
 
-/* Desktop Grande: acima de 1370px */
-@media (min-width: 1371px) {
-  .sobre-nos-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 80px 60px;
-    position: relative;
-  }
-
-  .sobre-nos-text {
-    max-width: 40%;
-  }
-
-  .sobre-nos-text .title {
-    font-size: 34px;
-  }
-
-  .sobre-nos-text p {
-    font-size: 17px;
-  }
-
-  .sobre-nos-btn {
-    font-size: 16px;
-    padding: 12px 40px;
-  }
-
-  .sobre-nos-image {
-    max-width: 40%;
-  }
-
-  .sobre-nos-image img {
-    width: 280px;
+  .sobre-nos-icon-right {
+    right: 0px;
   }
 }

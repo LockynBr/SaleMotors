@@ -108,7 +108,9 @@ body {
     font-size: 1.1rem;
     padding: 1.5rem 1rem;
   }
-
+  .tl-header span {
+    font-size: 1.5rem;
+  }
   .content-grid {
     grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
@@ -127,6 +129,10 @@ body {
     text-align: left;
   }
 
+  .info-block h2 span{
+    font-size: 1.4rem;
+  }
+
   .info-block p {
     font-size: 0.9rem;
   }
@@ -137,7 +143,7 @@ body {
   }
 
   .visual-element img {
-    width: 140px;
+    width: 250px;
   }
 
   .feature-icon {
@@ -158,6 +164,10 @@ body {
     padding: 2rem 1rem;
   }
 
+  .tl-header span {
+    font-size: 1.6rem;
+  }
+
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -175,7 +185,11 @@ body {
 
   .info-block h2 {
     font-size: 1.1rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  .info-block h2 span{
+    font-size: 1.5rem;
   }
 
   .info-block p {
@@ -191,7 +205,7 @@ body {
   }
 
   .visual-element img {
-    width: 150px;
+    width: 200px;
   }
 
   .feature-icon {
@@ -218,6 +232,10 @@ body {
     padding: 1.5rem 1rem;
   }
 
+  .tl-header span{
+    font-size: 1.5rem;
+  }
+
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -235,7 +253,11 @@ body {
 
   .info-block h2 {
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
+  }
+  
+  .info-block h2 span{
+    font-size: 1.4rem;
   }
 
   .info-block p {
@@ -251,7 +273,7 @@ body {
   }
 
   .visual-element img {
-    width: 140px;
+    width: 250px;
   }
 
   .feature-icon {
@@ -269,6 +291,10 @@ body {
   .tl-header {
     font-size: 1.5rem;
     padding: 2.5rem 2rem;
+  }
+
+  .tl-header span{
+    font-size: 2rem;
   }
 
   .content-grid {
@@ -318,6 +344,10 @@ body {
     padding: 3rem 2.5rem;
   }
 
+  .tl-header span {
+    font-size: 2.6rem;
+  }
+
   .content-grid {
     grid-template-columns: 1fr 1fr;
     padding: 3rem 120px;
@@ -330,7 +360,7 @@ body {
   }
 
   .info-block h2 {
-    font-size: 2rem;
+    font-size: 1..8rem;
   }
 
   .info-block p {
@@ -359,6 +389,10 @@ body {
     padding: 3rem 3rem;
   }
 
+  .tl-header span {
+  font-size: 2.7rem;
+  }
+
   .content-grid {
     padding: 3rem 120px;
   }
@@ -368,6 +402,10 @@ body {
   }
 
   .info-block h2 {
+    font-size: 1.4rem;
+  }
+
+  .info-block h2 span {
     font-size: 1.9rem;
   }
 
@@ -377,50 +415,5 @@ body {
 
   .feature-icon {
     width: 80px;
-  }
-}
-
-/* ==================== DESKTOPS MÉDIOS (1600px até 1919px) ==================== */
-@media (min-width: 1600px) and (max-width: 1919px) {
-  .content-grid {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-
-  .info-block {
-    margin-left: 160px;
-  }
-
-  .feature-icon {
-    width: 85px;
-  }
-}
-
-/* ==================== DESKTOPS GRANDES (1920px+) ==================== */
-@media (min-width: 1920px) {
-  .tl-header {
-    font-size: 2.2rem;
-    padding: 3rem 3rem;
-  }
-
-  .content-grid {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-
-  .info-block {
-    margin-left: 190px;
-  }
-
-  .info-block h2 {
-    font-size: 2rem;
-  }
-
-  .info-block p {
-    font-size: 1.3rem;
-  }
-
-  .feature-icon {
-    width: 90px;
   }
 }

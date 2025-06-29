@@ -108,6 +108,10 @@ body {
     padding: 1.5rem 1rem;
   }
 
+  .meta-header span {
+    font-size: 1.6rem;
+  }
+
   .content-grid {
     grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
@@ -124,6 +128,10 @@ body {
   .info-block h2 {
     font-size: 1rem;
     text-align: left;
+  }
+
+  .info-block h2 span{
+    font-size: 1.4rem;
   }
 
   .info-block p {
@@ -157,6 +165,10 @@ body {
     padding: 2rem 1rem;
   }
 
+  .meta-header span {
+    font-size: 1.7rem;
+  }
+
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -174,7 +186,11 @@ body {
 
   .info-block h2 {
     font-size: 1.1rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  .info-block h2 span {
+    font-size: 1.5rem;
   }
 
   .info-block p {
@@ -210,6 +226,10 @@ body {
     padding: 1.5rem 1rem;
   }
 
+  .meta-header span {
+    font-size: 1.6rem;
+  }
+
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -227,7 +247,12 @@ body {
 
   .info-block h2 {
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  .info-block h2 span {
+    font-size: 1.3rem;
+    text-align: left;
   }
 
   .info-block p {
@@ -263,6 +288,10 @@ body {
     padding: 2.5rem 2rem;
   }
 
+  .meta-header span {
+    font-size: 2.2rem;
+  }
+
   .content-grid {
     grid-template-columns: 1fr 1fr;
     padding: 2.5rem 50px;
@@ -277,7 +306,12 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .info-block h2 span {
+    font-size: 1.7rem;
     text-align: left;
   }
 
@@ -310,6 +344,10 @@ body {
     padding: 3rem 2.5rem;
   }
 
+  .meta-header span {
+    font-size: 2.7rem;
+  }
+
   .content-grid {
     grid-template-columns: 1fr 1fr;
     padding: 3rem 120px;
@@ -321,10 +359,6 @@ body {
 
   .info-block {
     margin-left: 95px;
-  }
-
-  .info-block h2 {
-    font-size: 2rem;
   }
 
   .info-block p {
@@ -363,10 +397,6 @@ body {
     margin-left: 140px;
   }
 
-  .info-block h2 {
-    font-size: 1.9rem;
-  }
-
   .info-block p {
     font-size: 1.25rem;
   }
@@ -399,38 +429,5 @@ body {
 
   .feature-icon {
     width: 85px;
-  }
-}
-
-/* ==================== DESKTOPS GRANDES (1920px+) ==================== */
-@media (min-width: 1920px) {
-  .meta-header {
-    font-size: 2.2rem;
-    padding: 3rem 3rem;
-  }
-
-  .content-grid {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-
-  .info-block {
-    margin-left: 190px;
-  }
-
-  .info-block h2 {
-    font-size: 2rem;
-  }
-
-  .info-block p {
-    font-size: 1.3rem;
-  }
-
-  .visual-element img {
-    width: 210px;
-  }
-
-  .feature-icon {
-    width: 90px;
   }
 }
