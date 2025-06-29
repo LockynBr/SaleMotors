@@ -2,45 +2,74 @@
 @import "../global/utilitario.css";
 
 .faixa-google-partner {
-  background: linear-gradient(to right, #10133B, #1E2060);
   display: flex;
+  height: 265px;
   justify-content: center;
   margin-top: 64px;
+  flex-direction: column;
+}
+
+.faixa-principal-box {
+  background: linear-gradient(to right, #10133B, #1E2060);
+  border-radius: 100px;
+  position: relative;
+  z-index: 10;
 }
 
 .container-faixa-google {
   display: flex;
   height: 142px;
+  justify-content: center;
+  gap: 50px;
 }
 
-.container-faixa-google img {
-  width: 94px;
-}
-
-.container-faixa-google a {
+.google-partner-selo {
   display: flex;
+  width: 120px;
   align-items: center;
 }
 
-.container-texto {
+.titulo-faixa-google {
   display: flex;
-  color: white;
   align-items: center;
-}
-
-.container-texto h3 {
-  width: 360px;
   font-size: 32px;
   font-weight: bold;
-  margin: 0px 90px;
   font-family: var(--font-mulish);
+  color: white;
+  letter-spacing: 0.5px;
 }
 
-.container-texto p {
-  width: 430px;
-  font-size: 16px;
+/* Fixo */
+.google-partner-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-40%);
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 0px 50px 50px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 3px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.hover-partner:hover .google-partner-result {
+  opacity: 1;
+  transform: translateY(-38%);
+  pointer-events: auto;
+}
+
+.google-partner-result p {
+  width: 645px;
+  padding-top: 60px;
   font-family: var(--font-roboto);
-  line-height: 1.5;
+  font-weight: 500;
+  color: #10133B;
   text-align: justify;
 }
 
