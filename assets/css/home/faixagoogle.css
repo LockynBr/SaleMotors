@@ -45,7 +45,7 @@
 .titulo-faixa-google {
   display: flex;
   align-items: center;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   font-family: var(--font-mulish);
   color: white;
@@ -71,7 +71,8 @@
 }
 
 .google-partner-result p {
-  max-width: 645px;
+  max-width: 763px;
+  font-size: 18px;
   padding-top: 60px;
   font-family: var(--font-roboto);
   font-weight: 500;
@@ -88,3 +89,171 @@
   transform: translateY(-50%);
   pointer-events: auto;
 }
+
+/* Extra pequeno (até 320px) */
+@media (max-width: 320px) {
+  .container-faixa-google {
+    height: 142px;
+    gap: 10px;
+  }
+  .titulo-faixa-google {
+    max-width: 150px;
+    font-size: 18px;
+  }
+  .google-partner-selo img {
+    max-width: 60px;
+  }
+  .google-partner-result p {
+    max-width: 200px;
+    font-size: 13px;
+  }
+}
+
+/* Pequeno (321px a 360px) */
+@media (min-width: 321px) and (max-width: 360px) {
+  .container-faixa-google {
+    height: 142px;
+    gap: 20px;
+  }
+  .titulo-faixa-google {
+    max-width: 180px;
+    font-size: 22px;
+  }
+  .google-partner-selo img {
+    max-width: 70px;
+  }
+  .google-partner-result p {
+    max-width: 240px;
+    font-size: 14px;
+  }
+}
+
+/* Médio (361px a 414px) */
+@media (min-width: 361px) and (max-width: 414px) {
+  .container-faixa-google {
+    height: 142px;
+    gap: 20px;
+  }
+  .titulo-faixa-google {
+    max-width: 195px;
+    font-size: 23px;
+  }
+  .google-partner-selo img {
+    max-width: 70px;
+  }
+  .google-partner-result p {
+    max-width: 300px;
+    font-size: 15px;
+  }
+}
+
+/* Grande (415px a 480px) */
+@media (min-width: 415px) and (max-width: 480px) {
+  .container-faixa-google {
+    height: 150px;
+    gap: 30px;
+  }
+  .titulo-faixa-google {
+    max-width: 225px;
+    font-size: 28px;
+  }
+  .google-partner-selo img {
+    max-width: 85px;
+  }
+  .google-partner-result p {
+    max-width: 320px;
+    font-size: 15px;
+  }
+}
+
+/* Pequenas Telas (481px a 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+  .container-faixa-google {
+    height: 142px;
+    gap: 20px;
+  }
+  .titulo-faixa-google {
+    max-width: 220px;
+    font-size: 28px;
+  }
+  .google-partner-selo img {
+    max-width: 80px;
+  }
+  .google-partner-result p {
+    max-width: 310px;
+    font-size: 15px;
+  }
+}
+
+/* Celular Grande / Tablets em pé (601px a 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .container-faixa-google {
+    height: 142px;
+    gap: 25px;
+  }
+  .titulo-faixa-google {
+    font-size: 29px;
+  }
+  .google-partner-selo img {
+    max-width: 90px;
+  }
+  .google-partner-result p {
+    max-width: 550px;
+    font-size: 16px;
+  }
+}
+
+/* Tablets em paisagem / pequenos laptops (769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container-faixa-google {
+    height: 142px;
+    gap: 40px;
+  }
+  .titulo-faixa-google {
+    font-size: 32px;
+  }
+  .google-partner-selo img {
+    max-width: 100px;
+  }
+  .google-partner-result p {
+    max-width: 620px;
+    font-size: 16px;
+  }
+}
+
+/* Desktops padrão (993px a 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container-faixa-google {
+    height: 142px;
+    gap: 50px;
+  }
+  .titulo-faixa-google {
+    font-size: 32px;
+  }
+  .google-partner-selo img {
+    max-width: 110px;
+  }
+  .google-partner-result p {
+    max-width: 640px;
+    font-size: 17px;
+  }
+}
+
+/* Telas grandes (acima de 1200px) */
+@media (min-width: 1201px) {
+  .container-faixa-google {
+    height: 142px;
+    gap: 50px;
+  }
+  .titulo-faixa-google {
+    font-size: 40px;
+  }
+  .google-partner-selo img {
+    max-width: 120px;
+  }
+  .google-partner-result p {
+    max-width: 763px;
+    font-size: 18px;
+  }
+}
+
