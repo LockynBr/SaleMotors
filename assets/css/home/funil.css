@@ -24,11 +24,16 @@ section.container-funil {
 }
 
 .container-content h2 {
-  font-family: var(--font-mulish);
+  font-family: 'Terminator';
   font-size: 36px;
   font-weight: bold;
   color: #10133B;
-  max-width: 600px;
+  max-width: 1200px;
+  letter-spacing: 2px;
+}
+
+.title-accent {
+  font-size: 49px;
 }
 
 .box-group {
@@ -135,14 +140,6 @@ section.container-funil {
   border-color: var(--bg-cor) transparent transparent transparent;
   filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.2));
 }
-
-/* .decoracao {
-  width: 100px;
-  height: 100px;
-  background: url("../../images/deco/bottom-left.svg") no-repeat;
-  background-position: right 20px bottom 20px;
-} */
-
 
 @media (max-width: 1280px) {
   .container-content {
