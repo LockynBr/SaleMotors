@@ -19,6 +19,12 @@
     margin: 0 auto;
 }
 
+.title-accent {
+  font-family: 'future-earth';
+  margin-left: 2px;
+  margin-right: -2px;
+}
+
 :root {
   /* Cores principais */
   --color-primary: #10133B;
