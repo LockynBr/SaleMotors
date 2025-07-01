@@ -56,22 +56,6 @@ body {
   100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
-.sobre-nos-icon-two {
-  width: 18px;
-  animation: float-sobre-nos-two 13s ease-in-out infinite;
-  margin-left: 250px;
-}
-
-@keyframes float-sobre-nos-two {
-  0%   { transform: translate(0px, 0px); }
-  15%  { transform: translate(-25px, 20px); }
-  30%  { transform: translate(35px, 15px); }
-  50%  { transform: translate(50px, 25px); }
-  70%  { transform: translate(20px, 15px); }
-  85%  { transform: translate(-30px, 10px); }
-  100% { transform: translate(0px, 0px); }
-}
-
 .content-grid {
   padding: 3rem;
   padding-right: 150px;
@@ -170,7 +154,7 @@ body {
   }
 
   .visual-element img {
-    width: 140px;
+    width: 120px;
   }
 
   .feature-icon {
@@ -183,9 +167,9 @@ body {
     height: auto;
   }
   
-  .sobre-nos-icon-one,
-  .sobre-nos-icon-two {
-    display: none;
+  .sobre-nos-icon-one {
+    top: 260px;
+    margin-right: 80px;
   }
 }
 
@@ -233,7 +217,7 @@ body {
   }
 
   .visual-element img {
-    width: 150px;
+    width: 130px;
   }
 
   .feature-icon {
@@ -245,9 +229,9 @@ body {
     margin-bottom: -250px;
   }
 
-  .sobre-nos-icon-one,
-  .sobre-nos-icon-two {
-    display: none;
+  .sobre-nos-icon-one {
+    top: 260px;
+    margin-right: 80px;
   }
 }
 
@@ -308,9 +292,9 @@ body {
     margin-bottom: -250px;
   }
   
-  .sobre-nos-icon-one,
-  .sobre-nos-icon-two {
-    display: none;
+  .sobre-nos-icon-one {
+    top: 200px;
+    margin-right: 80px;
   }
 }
 
@@ -364,9 +348,9 @@ body {
     width: 12%;
   }
   
-  .sobre-nos-icon-one,
-  .sobre-nos-icon-two {
-    display: none;
+  .sobre-nos-icon-one {
+    top: 90px;
+    margin-right: 75px;
   }
 }
 
@@ -419,15 +403,10 @@ body {
   .sobre-nos-icon-one {
     margin-right: 140px;
   }
-
-  .sobre-nos-icon-two {
-    margin-left: 130px;
-    margin-bottom: 50px;
-  }
 }
 
 /* ==================== DESKTOPS PEQUENOS (1440px até 1599px) ==================== */
-@media (min-width: 1440px) and (max-width: 1599px) {
+@media (min-width: 1440px) and (max-width: 1699px) {
   .monitoria-header {
     font-size: 2rem;
     padding: 3rem 3rem;

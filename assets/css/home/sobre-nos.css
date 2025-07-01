@@ -23,8 +23,7 @@
 
 .sobre-nos-container .sobre-nos-text .title {
   font-size: 36px;
-  color: #0c1022;
-  font-weight: bold;
+  color: #10133B;
   position: relative;
   display: inline-block;
   padding-left: 10px;
@@ -79,6 +78,8 @@
 
 .sobre-nos-btn:hover {
   background: linear-gradient(#0E123B, #121638);
+  transform: scaleX(1.1);
+  transition: transform 0.5s ease;
 }
 
 .sobre-nos-image {
@@ -142,8 +143,12 @@
     margin: 0 auto;
   }
 
-  .sobre-nos-text .title {
-    font-size: 22px;
+  .sobre-nos-container .sobre-nos-text .title {
+    font-size: 25px;
+  }
+
+  .sobre-nos-text .title span{
+    font-size: 35px;
   }
 
   .sobre-nos-text p {
@@ -175,7 +180,7 @@
 }
 
 /* Celulares Maiores: 577px até 768px */
-@media (min-width: 577px) and (max-width: 949px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .sobre-nos-container {
     flex-direction: column;
     height: auto;
@@ -189,12 +194,16 @@
     margin: 0 auto;
   }
 
-  .sobre-nos-text .title {
-    font-size: 24px;
+  .sobre-nos-container .sobre-nos-text .title {
+    font-size: 27px;
+  }
+
+  .sobre-nos-text .title span{
+    font-size: 38px;
   }
 
   .sobre-nos-text p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .sobre-nos-btn {
@@ -233,15 +242,20 @@
   }
 
   .sobre-nos-text {
-    max-width: 45%;
+    max-width: 46%;
   }
 
-  .sobre-nos-text .title {
-    font-size: 28px;
+  .sobre-nos-container .sobre-nos-text .title {
+    font-size: 30px;
+
+  }
+
+  .sobre-nos-text .title span{
+    font-size: 42px;
   }
 
   .sobre-nos-text p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .sobre-nos-btn {
@@ -258,11 +272,11 @@
   }
 
   .sobre-nos-icon-right {
-    right: 0px;
+    right: -70px;
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1540px) {
+@media (min-width: 1201px) and (max-width: 1660px) {
   .sobre-nos-container {
     display: flex;
     flex-direction: row;
@@ -277,8 +291,12 @@
     max-width: 40%;
   }
 
-  .sobre-nos-text .title {
-    font-size: 30px;
+  .sobre-nos-container .sobre-nos-text .title {
+    font-size: 33px;
+  }
+
+  .sobre-nos-text .title span{
+    font-size: 46px;
   }
 
   .sobre-nos-text p {
