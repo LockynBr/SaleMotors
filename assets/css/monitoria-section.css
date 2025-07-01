@@ -37,6 +37,41 @@ body {
   margin-right: -2px;
 }
 
+.sobre-nos-icon-one {
+  width: 18px;
+  animation: float-sobre-nos-one 13s ease-in-out infinite;
+  margin-left: auto;
+  margin-right: 360px;
+  position: relative;
+  top: 80px;
+}
+
+@keyframes float-sobre-nos-one {
+  0%   { transform: translate(0px, 0px) rotate(0deg); }
+  15%  { transform: translate(-40px, 35px) rotate(-5deg); }
+  30%  { transform: translate(50px, 25px) rotate(4deg); }
+  50%  { transform: translate(70px, -20px) rotate(-6deg); }
+  70%  { transform: translate(25px, 40px) rotate(6deg); }
+  85%  { transform: translate(-45px, -30px) rotate(-4deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.sobre-nos-icon-two {
+  width: 18px;
+  animation: float-sobre-nos-two 13s ease-in-out infinite;
+  margin-left: 250px;
+}
+
+@keyframes float-sobre-nos-two {
+  0%   { transform: translate(0px, 0px); }
+  15%  { transform: translate(-25px, 20px); }
+  30%  { transform: translate(35px, 15px); }
+  50%  { transform: translate(50px, 25px); }
+  70%  { transform: translate(20px, 15px); }
+  85%  { transform: translate(-30px, 10px); }
+  100% { transform: translate(0px, 0px); }
+}
+
 .content-grid {
   padding: 3rem;
   padding-right: 150px;
@@ -147,6 +182,11 @@ body {
     width: 30%;
     height: auto;
   }
+  
+  .sobre-nos-icon-one,
+  .sobre-nos-icon-two {
+    display: none;
+  }
 }
 
 /* ==================== CELULARES MÉDIOS (481px até 576px) ==================== */
@@ -203,6 +243,11 @@ body {
   .background-icon {
     width: 28%;
     margin-bottom: -250px;
+  }
+
+  .sobre-nos-icon-one,
+  .sobre-nos-icon-two {
+    display: none;
   }
 }
 
@@ -262,6 +307,11 @@ body {
     width: 10%;
     margin-bottom: -250px;
   }
+  
+  .sobre-nos-icon-one,
+  .sobre-nos-icon-two {
+    display: none;
+  }
 }
 
 /* ==================== TABLETS (768px até 1024px) ==================== */
@@ -313,6 +363,11 @@ body {
   .background-icon {
     width: 12%;
   }
+  
+  .sobre-nos-icon-one,
+  .sobre-nos-icon-two {
+    display: none;
+  }
 }
 
 /* ==================== NOTEBOOKS GRANDES (1201px até 1439px) ==================== */
@@ -360,6 +415,15 @@ body {
   .feature-icon {
     width: 80px;
   }
+
+  .sobre-nos-icon-one {
+    margin-right: 140px;
+  }
+
+  .sobre-nos-icon-two {
+    margin-left: 130px;
+    margin-bottom: 50px;
+  }
 }
 
 /* ==================== DESKTOPS PEQUENOS (1440px até 1599px) ==================== */
@@ -398,26 +462,8 @@ body {
   .feature-icon {
     width: 80px;
   }
-}
 
-/* ==================== DESKTOPS MÉDIOS (1600px até 1919px) ==================== */
-@media (min-width: 1600px) and (max-width: 1800px) {
-  .content-grid {
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-left: 60px;
-    width: 100%;
-  }
-
-  .info-block {
-    margin-left: 160px;
-  }
-
-  .visual-element img {
-    width: 200px;
-  }
-
-  .feature-icon {
-    width: 85px;
+  .sobre-nos-icon-one {
+    margin-right: 180px;
   }
 }

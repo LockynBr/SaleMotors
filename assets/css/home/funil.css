@@ -20,7 +20,6 @@ section.container-funil {
   background: 
     url("../../images/deco/bottom-left.svg") no-repeat left 20px bottom 20px,
     url("../../images/deco/bottom-rigth.svg") no-repeat right 20px bottom 20px;
-
 }
 
 .container-content h2 {
@@ -149,8 +148,8 @@ section.container-funil {
   }
 
   .box {
-    width: 180px;
-    height: 130px;
+    width: 230px;
+    height: 140px;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -160,7 +159,7 @@ section.container-funil {
   }
 
   .box p {
-    font-size: 13px;
+    font-size: 15px;
     padding: 0 6px;
     word-wrap: break-word;
     max-width: 100%;
@@ -175,7 +174,7 @@ section.container-funil {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1160px) {
   .container-content h2 {
     font-size: 28px;
     text-align: center;
@@ -183,7 +182,7 @@ section.container-funil {
   }
 
   .box {
-    width: 160px;
+    width: 180px;
     height: 120px;
   }
 
@@ -195,6 +194,10 @@ section.container-funil {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+  }
+
+  .container-content {
+    height: 930px;
   }
 
   .result-content {
@@ -218,10 +221,14 @@ section.container-funil {
   }
 }
 
-@media (max-width: 913px) {
+@media (max-width: 1017px) {
   .box {
-    width: 140px;
-    height: 110px;
+    width: 160px;
+    height: 130px;
+  }
+
+  .box-group {
+    width: 115%;
   }
 
   .box p {
@@ -233,7 +240,7 @@ section.container-funil {
   }
 }
 
-@media (max-width: 803px) {
+@media (max-width: 813px) {
   .container-content {
     align-items: center;
   }
@@ -243,13 +250,13 @@ section.container-funil {
   }
 
   .box {
-    width: 130px;
-    height: 100px;
+    width: 155px;
+    height: 135px;
     margin: 10px;
   }
 
   .box p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .result-content img {
@@ -264,39 +271,23 @@ section.container-funil {
   }
 }
 
-@media (max-width: 788px) {
-  .box {
-    width: 120px;
-    height: 90px;
-  }
 
-  .box img {
-    width: 34px;
-  }
 
-  .box p {
-    font-size: 10px;
-  }
-
-  .result-content img {
-    width: 160px;
-  }
-
-  .result-content p {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 670px) {
+@media (max-width: 755px) {
   section.container-funil {
     height: auto;
     padding-bottom: 40px;
     border-radius: 20px 20px 0 0;
   }
 
+  .box-group {
+    width: 116%;
+    margin-bottom: -50px;
+  }
+
   .box {
-    width: 110px;
-    height: 80px;
+    width: 145px;
+    height: 115px;
   }
 
   .box img {
@@ -304,7 +295,7 @@ section.container-funil {
   }
 
   .box p {
-    font-size: 9px;
+    font-size: 10.5px;
   }
 
   .result-content img {
@@ -312,19 +303,23 @@ section.container-funil {
   }
 
   .result-content p {
-    font-size: 10px;
+    font-size: 12px;
     padding: 8px;
   }
 }
 
-@media (max-width: 627px) {
+@media (max-width: 711px) {
   .container-content h2 {
     font-size: 20px;
   }
 
+  .box-group {
+    margin-bottom: -10px;
+  }
+
   .box {
-    width: 95px;
-    height: 80px;
+    width: 130px;
+    height: 105px;
   }
 
   .box img {
@@ -332,7 +327,7 @@ section.container-funil {
   }
 
   .box p {
-    font-size: 7.8px;
+    font-size: 9px;
   }
 
   .result-content img {
@@ -340,24 +335,23 @@ section.container-funil {
   }
 
   .result-content p {
-    font-size: 9.5px;
+    font-size: 13px;
     padding: 6px;
   }
 }
 
-
-
-@media (max-width: 559px) {
+@media (max-width: 654px) {
   .box-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 74%;
+    margin-bottom: 10px;
+    width: 80%;
   }
   
   .box {
-    width: 95px;
-    height: 85px;
+    width: 125px;
+    height: 105px;
   }
 
   .box img {
@@ -365,7 +359,7 @@ section.container-funil {
   }
 
   .box p {
-    font-size: 8px;
+    font-size: 11px;
     padding: 2px;
   }
 
@@ -374,6 +368,51 @@ section.container-funil {
   }
 
   .result-content p {
-    font-size: 9px;
+    font-size: 11px;
+  }
+
+  .container-content {
+    height: 1030px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-content {
+    height: 1150px;
+  }
+}
+
+@media (max-width: 467px) {
+  .box-group {
+    width: 100%;
+  }
+
+  .box p {
+    font-size: 10px;
+  }
+
+  .container-content {
+    height: 1200px;
+  }
+
+}
+
+@media (max-width: 383px) {
+  .box-group {
+    width: 120%;
+  }
+
+  .container-content {
+    height: 1350px;
+  }
+}
+
+@media (max-width: 335px) {
+  .box-group {
+    width: 124%;
+  }
+
+  .container-content {
+    height: 1400px;
   }
 }
