@@ -6,6 +6,9 @@ section.container-funil {
   height: 920px;
   border-radius: 30px;
   margin-top: 64px;
+  background: url(../../images/icones/engine-cut.png) no-repeat left;
+  background-size: 250px auto;
+  background-position: 0px 300px; /
 }
 
 .container-content {
