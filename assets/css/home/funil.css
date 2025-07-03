@@ -3,9 +3,13 @@
 
 section.container-funil {
   background-color: #E6E7E8;
-  height: 920px;
+  height: 100%;
   border-radius: 30px;
   margin-top: 64px;
+  background: url(../../images/icones/engine-cut.png) no-repeat left;
+  background-size: 250px auto;
+  background-position: 0px 300px; 
+  background-color: #E6E7E8;
 }
 
 .container-content {
@@ -41,13 +45,6 @@ section.container-funil {
   width: 100%;
 }
 
-.box:hover {
-  background-color: #CFCFCF;
-  transform: scale(1.05);   
-  transition: all 0.3s ease;
-  color: white;
-}
-
 .box {
   display: flex;
   flex-direction: column;
@@ -61,6 +58,13 @@ section.container-funil {
   cursor: pointer;
   border: none;
   margin: 40px 0px 15px 0px;
+}
+
+.box:hover {
+  background-color: #CFCFCF;
+  transform: scale(1.05);   
+  transition: all 0.3s ease;
+  color: white;
 }
 
 .box img {
