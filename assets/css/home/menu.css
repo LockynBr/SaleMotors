@@ -52,7 +52,7 @@
   gap: 3.5rem;
 }
 
-.menu-list a {
+body.home .menu-list a {
   display: inline-block;
   padding: 12px 0;
   font-family: var(--font-mulish);
@@ -64,7 +64,7 @@
   font-weight: 500;
 }
 
-.menu-list a::after {
+body.home .menu-list a::after {
   content: "";
   display: block;
   height: 2px;
@@ -75,8 +75,32 @@
   position: absolute;
 }
 
-.menu-list a:hover::after,
-.menu-list a.ativo:hover::after {
+body.internal .menu-list a {
+  display: inline-block;
+  padding: 12px 0;
+  font-family: var(--font-mulish);
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 20px;
+  margin-right: 16px;
+  position: relative;
+  font-weight: 500;
+}
+
+body.internal .menu-list a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-primary);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+
+.menu-list > li > a:hover::after,
+.menu-list > li > a.ativo:hover::after {
   width: 100%;
 }
 
@@ -109,6 +133,19 @@
 
 }
 
+.menu-dropdown a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #0b0d3e;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .menu-dropdown::before {
   content: "";
   display: block;
@@ -122,12 +159,13 @@
 }
 
 .menu-dropdown li a {
-  color: #0b0d3e;
+  color: #0b0d3e !important;
   font-weight: 500;
 }
 
 .menu-dropdown li a:hover::after {
   background-color: #0b0d3e;
+  width: 100%;
 }
 
 .menu-button {
@@ -202,15 +240,14 @@
 
   #menu {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f8f8f8;
     width: 200px;
     z-index: 301;
     padding: 20px;
     top: 0;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
     left: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   }
 
   #menu li a:first-child {

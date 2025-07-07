@@ -79,13 +79,22 @@ export class Slide {
   }
 
   slidesConfig() {
+    // Remover clones antigos
+    const clonedSlides = this.slide.querySelectorAll('.clone');
+    clonedSlides.forEach((clone) => clone.remove());
+
     const originalChildren = [...this.slide.children];
     if (originalChildren.length > 0) {
       const firstClone = originalChildren[0].cloneNode(true);
       const lastClone = originalChildren[originalChildren.length - 1].cloneNode(true);
+
+      firstClone.classList.add('clone');
+      lastClone.classList.add('clone');
+
       this.slide.appendChild(firstClone);
       this.slide.prepend(lastClone);
     }
+
     this.slideArray = [...this.slide.children].map((element) => {
       const position = this.slidePosition(element);
       return { position, element };
@@ -111,6 +120,7 @@ export class Slide {
     this.dist.finalPosition = activeSlide.position;
     this.changeActiveClass();
     this.wrapper.dispatchEvent(this.changeEvent);
+
     this.slide.addEventListener('transitionend', () => {
       this.transitioning = false;
       this.autoSlide(3000);
@@ -148,12 +158,10 @@ export class Slide {
   }
 
   onResize() {
-    setTimeout(() => {
-      this.slidesConfig();
-      const originalIndex = this.index.active > 0 && this.index.active < this.slideArray.length - 1
-        ? this.index.active : 1;
-      this.changeSlide(originalIndex);
-    }, 1000);
+    this.slidesConfig();
+    const originalIndex = this.index.active > 0 && this.index.active < this.slideArray.length - 1
+      ? this.index.active : 1;
+    this.changeSlide(originalIndex);
   }
 
   addResizeEvent() {
@@ -200,11 +208,11 @@ export default class SlideNav extends Slide {
   }
 
   autoSlide(interval = 3000) {
-  this.stopAutoSlide();
-  this.autoSlideInterval = setInterval(() => {
-    this.activeNextSlide();
-  }, interval);
-}
+    this.stopAutoSlide();
+    this.autoSlideInterval = setInterval(() => {
+      this.activeNextSlide();
+    }, interval);
+  }
 
   stopAutoSlide() {
     if (this.autoSlideInterval) {
