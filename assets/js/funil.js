@@ -3,12 +3,12 @@ export default function initFunil() {
     {
       img: 'assets/images/icones/funil-sm.png',
       texto:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, itaque sint. Doloribus tenetur nihil molestiae odio eveniet commodi tempore maxime ab, aliquam repudiandae vitae, ullam magni vero officia quasi ratione? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi error fuga numquam aliquam laboriosam quis necessitatibus assumenda, asperiores adipisci ipsa maiores et, excepturi quasi ipsam mollitia, odio quae ut obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quia quod quae vitae nesciunt id quasi at nemo fugiat soluta cumque ipsam enim voluptatibus consequuntur ab, beatae delectus? Provident, debitis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere nesciunt eos nostrum tenetur quae harum ipsa commodi magnam natus. Provident ut necessitatibus quasi nihil quo, iusto temporibus sequi officia fugit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias libero sint quos, explicabo quia enim ex autem tempora officiis magni, voluptatum doloremque sequi impedit. Perspiciatis cum quaerat quas praesentium aut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellendus doloremque beatae velit ratione maiores totam ducimus, labore eos vero similique tempora blanditiis ipsam error perspiciatis animi sapiente veniam iste.',
+        'Desenvolvemos planos de tráfego digital sob medida para o seu negócio, focados nas plataformas mais relevantes para seu público. Analisamos dados e comportamentos para definir as melhores táticas que maximizam alcance e conversão.',
     },
     {
       img: 'assets/images/icones/funil-sm.png',
       texto:
-        'Prestamos serviços especializados nas maiores plataformas do mercado, como Google Ads, Meta Ads (Facebook/Instagram), TikTok, LinkedIn e marketplaces como Amazon e Mercado Livre. Desde a criação e otimização de campanhas até a gestão de produtos e análise de performance, garantimos que sua presença online seja profissional, eficiente e orientada para resultados concretos.',
+        'Atuamos diretamente na criação, configuração e otimização das campanhas em Meta Ads, Google Ads, LinkedIn Ads, TikTok Ads e outras, garantindo que cada anúncio entregue o melhor desempenho possível.',
     },
     {
       img: 'assets/images/icones/funil-sm.png',
