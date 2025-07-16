@@ -71,6 +71,7 @@
   font-weight: 600;
   color: #333;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .card-beneficios:hover .card-beneficios-description {
