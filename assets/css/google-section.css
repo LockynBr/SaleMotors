@@ -36,18 +36,19 @@ body {
   color: white;
   padding: 5rem 2rem;
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  font-family: 'terminator';
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Oswald';
   margin-top: 164px;
+  text-transform: uppercase;
 }
 
-.google-header span {
+/* .google-header span {
   font-size: 3.5rem;
   font-family: 'future-earth';
   margin-left: 2px;
   margin-right: -2px;
-}
+} */
 
 .content-grid {
   padding: 3rem;
@@ -67,16 +68,19 @@ body {
 
 .info-block h2 {
   color: #10133B;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.75rem;
-  font-family: 'terminator';
+  font-weight: 500;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-optical-sizing: auto;
 }
 
-.info-block h2 span{
+/* .info-block h2 span{
   font-family: 'future-earth';
   font-size: 2rem;
   margin-left: 2px;
-}
+} */
 
 .info-block h2::before {
   content: none !important;
