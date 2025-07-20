@@ -54,6 +54,7 @@
   line-height: 1.4;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   text-align: justify;
+  text-justify: inter-word;
 }
 
 .videomain-footer p {

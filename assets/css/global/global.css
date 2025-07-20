@@ -39,6 +39,12 @@ a{
     z-index:9999;
 }
 
+.text-justify{
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
 @media (max-width: 900px){
    .whatsapp-position{
     right: 10px;
