@@ -8,3 +8,4 @@ define("SMTP_HOST", $_ENV['SMTP_HOST']);
 define("SMTP_PORT", $_ENV['SMTP_PORT']);
 define("SMTP_USER", $_ENV['SMTP_USER']);
 define("SMTP_PASS", $_ENV['SMTP_PASS']);
+define("SMTP_RECIVER", $_ENV['SMTP_RECIVER']);
