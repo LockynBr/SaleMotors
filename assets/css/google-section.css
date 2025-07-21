@@ -43,13 +43,6 @@ body {
   text-transform: uppercase;
 }
 
-/* .google-header span {
-  font-size: 3.5rem;
-  font-family: 'future-earth';
-  margin-left: 2px;
-  margin-right: -2px;
-} */
-
 .content-grid {
   padding: 3rem;
   padding-right: 150px;
@@ -75,12 +68,6 @@ body {
   text-transform: uppercase;
   font-optical-sizing: auto;
 }
-
-/* .info-block h2 span{
-  font-family: 'future-earth';
-  font-size: 2rem;
-  margin-left: 2px;
-} */
 
 .info-block h2::before {
   content: none !important;
@@ -170,11 +157,7 @@ body {
 
 @media (max-width: 1540px) {
   .google-header {
-    font-size: 2rem;
-  }
-
-  .google-header span {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .info-block h2 {
@@ -213,12 +196,8 @@ body {
 
 @media (max-width: 768px) {
   .google-header {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     padding: 2rem 1rem;
-  }
-
-  .google-header span {
-    font-size: 1.8rem;
   }
 
   .content-grid {
@@ -241,12 +220,8 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: left;
-  }
-  
-  .info-block h2 span {
-    font-size: 1.7rem;
   }
 
   .info-block p {
@@ -259,16 +234,16 @@ body {
   .content-grid .visual-element {
     order: 2;
   }
+
+  .visual-element img {
+    width: 160px;
+  }
 }
 
 @media (max-width: 480px) {
   .google-header {
     font-size: 1.1rem;
     padding: 1.5rem 1rem;
-  }
-
-  .google-header span{
-    font-size: 1.6rem;
   }
 
   .sobre-nos-icon-two {
@@ -283,23 +258,16 @@ body {
     font-size: 1rem;
     text-align: left;
   }
-  .info-block h2 span {
-    font-size: 1.4rem;
-    letter-spacing: -1px;
-    margin-left: 1px;
-  }
+  
   .info-block p {
     font-size: 0.9rem;
   }
+  
   .visual-element img {
     width: 140px;
   }
+
   .feature-icon {
     width: 60px;
   }
-  .background-icon {
-    margin-bottom: -250px;
-      width: 30%;
-      height: auto;
-    }
 }

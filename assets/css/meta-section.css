@@ -25,16 +25,9 @@ body {
   color: white;
   padding: 5rem 2rem;
   text-align: center;
-  font-size: 2.1rem;
-  font-weight: bold;
-  font-family: 'terminator';
-}
-
-.meta-header span{
   font-size: 3rem;
-  font-family: 'future-earth';
-  margin-left: 2px;
-  margin-right: -1px;
+  font-weight: 500;
+  font-family: 'Oswald';
 }
 
 .sobre-nos-icon-one {
@@ -74,15 +67,12 @@ body {
 
 .info-block h2 {
   color: #10133B;
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-family: 'terminator';
-}
-
-.info-block h2 span {
-  font-family: 'future-earth';
   font-size: 2rem;
-  margin-left: 2px;
+  margin-bottom: 0.75rem;
+  font-family: 'Oswald';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
 }
 
 .info-block h2::before {
@@ -95,6 +85,8 @@ body {
   font-weight: 500;
   text-align: justify;
   color: #334155;
+  hyphens: auto;
+  text-justify: inter-word;
 }
 
 .visual-element {
@@ -127,10 +119,6 @@ body {
     padding: 1.5rem 1rem;
   }
 
-  .meta-header span {
-    font-size: 1.6rem;
-  }
-
   .content-grid {
     grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
@@ -147,10 +135,6 @@ body {
   .info-block h2 {
     font-size: 1rem;
     text-align: left;
-  }
-
-  .info-block h2 span{
-    font-size: 1.4rem;
   }
 
   .info-block p {
@@ -189,10 +173,6 @@ body {
     padding: 2rem 1rem;
   }
 
-  .meta-header span {
-    font-size: 1.7rem;
-  }
-
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -200,6 +180,7 @@ body {
     justify-items: center;
     text-align: center;
     margin-left: 0px;
+    margin-bottom: 50px;
     width: 100%;
   }
 
@@ -211,10 +192,6 @@ body {
   .info-block h2 {
     font-size: 1.1rem;
     text-align: left;
-  }
-
-  .info-block h2 span {
-    font-size: 1.5rem;
   }
 
   .info-block p {
@@ -255,10 +232,6 @@ body {
     padding: 1.5rem 1rem;
   }
 
-  .meta-header span {
-    font-size: 1.6rem;
-  }
-
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -266,6 +239,7 @@ body {
     justify-items: center;
     text-align: center;
     margin-left: 0px;
+    margin-bottom: 50px;
     width: 100%;
   }
 
@@ -276,11 +250,6 @@ body {
 
   .info-block h2 {
     font-size: 1rem;
-    text-align: left;
-  }
-
-  .info-block h2 span {
-    font-size: 1.3rem;
     text-align: left;
   }
 
@@ -318,18 +287,14 @@ body {
 /* ==================== TABLETS (768px até 1024px) ==================== */
 @media (min-width: 768px) and (max-width: 1200px) {
   .meta-header {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 2.5rem 2rem;
-  }
-
-  .meta-header span {
-    font-size: 2.2rem;
   }
 
   .content-grid {
     grid-template-columns: 1fr 1fr;
     padding: 2.5rem 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-left: 0px;
     width: 100%;
   }
@@ -340,12 +305,7 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1.2rem;
-    text-align: left;
-  }
-
-  .info-block h2 span {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-align: left;
   }
 
@@ -378,12 +338,8 @@ body {
 /* ==================== NOTEBOOKS GRANDES (1201px até 1439px) ==================== */
 @media (min-width: 1201px) and (max-width: 1439px) {
   .meta-header {
-    font-size: 1.9rem;
+    font-size: 2rem;
     padding: 3rem 2.5rem;
-  }
-
-  .meta-header span {
-    font-size: 2.7rem;
   }
 
   .content-grid {
@@ -397,6 +353,11 @@ body {
 
   .info-block {
     margin-left: 95px;
+  }
+
+  .info-block h2 {
+    font-size: 1.5rem;
+    text-align: left;
   }
 
   .info-block p {
@@ -425,7 +386,7 @@ body {
 /* ==================== DESKTOPS PEQUENOS (1440px até 1599px) ==================== */
 @media (min-width: 1440px) and (max-width: 1699px) {
   .meta-header {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 3rem 3rem;
   }
 
