@@ -33,22 +33,15 @@ body {
   width: 10%;
 }
 
-.google-header {
+.sobre-header {
   background: linear-gradient(90deg, #10133b, #1e2060);
   color: white;
   padding: 5rem 2rem;
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  font-family: 'terminator';
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Oswald';
   margin-top: 164px;
-}
-
-.google-header span {
-  font-size: 3.5rem;
-  font-family: 'future-earth';
-  margin-left: 2px;
-  margin-right: -2px;
 }
 
 .content-grid {
@@ -69,15 +62,12 @@ body {
 
 .info-block h2 {
   color: #10133B;
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-family: 'terminator';
-}
-
-.info-block h2 span{
-  font-family: 'future-earth';
   font-size: 2rem;
-  margin-left: 2px;
+  margin-bottom: 0.75rem;
+  font-family: 'Oswald';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
 }
 
 .info-block h2::before {
@@ -90,6 +80,8 @@ body {
   font-weight: 500;
   text-align: justify;
   color: #334155;
+  hyphens: auto;
+  text-justify: inter-word;
 }
 
 .visual-element {
@@ -99,10 +91,10 @@ body {
 }
 
 .visual-element img {
-  width: 180px;
-  max-width: 100%;
+  width: 450px;
   height: auto;
   -webkit-user-drag: none;
+  z-index: 1;
 }
 
 .feature-icon {
@@ -165,16 +157,16 @@ body {
 }
 
 @media (max-width: 1540px) {
-  .google-header {
-    font-size: 2rem;
-  }
-
-  .google-header span {
-    font-size: 2.8rem;
+  .sobre-header {
+    font-size: 2.5rem;
   }
 
   .info-block h2 {
     text-align: left;
+  }
+
+  .visual-element img {
+    width: 400px;
   }
 
   .sobre-nos-icon-one {
@@ -191,7 +183,7 @@ body {
 }
 
 @media (max-width: 900px){
-  .google-header{
+  .sobre-header{
     margin-top: 90px;
   }
 
@@ -208,13 +200,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .google-header {
-    font-size: 1.3rem;
+  .sobre-header {
+    font-size: 1.7rem;
     padding: 2rem 1rem;
-  }
-
-  .google-header span {
-    font-size: 1.8rem;
   }
 
   .content-grid {
@@ -237,12 +225,8 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: left;
-  }
-  
-  .info-block h2 span {
-    font-size: 1.7rem;
   }
 
   .info-block p {
@@ -255,20 +239,25 @@ body {
   .content-grid .visual-element {
     order: 2;
   }
+
+  .visual-element img {
+    width: 300px;
+  }
 }
 
 @media (max-width: 480px) {
-  .google-header {
+  .sobre-header {
     font-size: 1.1rem;
     padding: 1.5rem 1rem;
   }
 
-  .google-header span{
-    font-size: 1.6rem;
+  .sobre-nos-icon-one {
+    top: 250px;
   }
 
   .sobre-nos-icon-two {
     margin-left: 50px;
+    top: 148px;
   }
 
   .content-grid {
@@ -279,16 +268,11 @@ body {
     font-size: 1rem;
     text-align: left;
   }
-  .info-block h2 span {
-    font-size: 1.4rem;
-    letter-spacing: -1px;
-    margin-left: 1px;
-  }
   .info-block p {
     font-size: 0.9rem;
   }
   .visual-element img {
-    width: 140px;
+    width: 240px;
   }
   .feature-icon {
     width: 60px;

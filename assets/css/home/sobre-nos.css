@@ -1,3 +1,5 @@
+@import url(../global/utilitario.css);
+
 .sobre-nos-container {
   margin-top: 100px;
   display: flex;
@@ -11,9 +13,6 @@
   background-position: center;
   background-repeat: repeat;
   border-radius: 10px;
-  /* height: 60vh; */
-  /* padding: 80px 60px; */
-  /* padding-top: 64px; */
 }
 
 .sobre-nos-text {
@@ -22,20 +21,15 @@
 }
 
 .sobre-nos-container .sobre-nos-text .title {
-  font-size: 36px;
   color: #10133B;
   position: relative;
   display: inline-block;
   padding-left: 10px;
   margin-bottom: 10px;
-  font-family: 'terminator';
-}
-
-.sobre-nos-text .title span {
-  font-family: 'future-earth';
-  font-size: 49px;
-  margin-left: 2px;
-  margin-right: -2px;
+  font-family: 'Oswald';
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -0.1px;
 }
 
 .sobre-nos-text .title::before {
@@ -47,7 +41,7 @@
   position: absolute;
   transform: translateX(35%);
   left: 0;
-  top: 55%;
+  top: 57%;
   z-index: -1;
 }
 
@@ -147,10 +141,6 @@
     text-align: left;
   }
 
-  .sobre-nos-text .title span{
-    font-size: 35px;
-  }
-
   .sobre-nos-text p {
     font-size: 14px;
     text-align: justify;
@@ -196,10 +186,6 @@
 
   .sobre-nos-container .sobre-nos-text .title {
     font-size: 27px;
-  }
-
-  .sobre-nos-text .title span{
-    font-size: 38px;
   }
 
   .sobre-nos-text p {
@@ -251,10 +237,6 @@
 
   }
 
-  .sobre-nos-text .title span{
-    font-size: 42px;
-  }
-
   .sobre-nos-text p {
     font-size: 14px;
   }
@@ -284,7 +266,6 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    /* padding: 60px 40px; */
     position: relative;
   }
 
@@ -294,10 +275,6 @@
 
   .sobre-nos-container .sobre-nos-text .title {
     font-size: 33px;
-  }
-
-  .sobre-nos-text .title span{
-    font-size: 46px;
   }
 
   .sobre-nos-text p {
