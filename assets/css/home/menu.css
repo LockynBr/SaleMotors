@@ -206,6 +206,10 @@ body.internal .menu-list a::after {
     border-radius: 0;
   }
 
+  .menu-list a {
+    color: var(--color-primary) !important;
+  }
+
   .menu-button {
     display: flex;
     align-items: center;
