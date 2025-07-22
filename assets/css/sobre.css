@@ -34,7 +34,9 @@ body {
 }
 
 .sobre-header {
-  background: linear-gradient(90deg, #10133b, #1e2060);
+  background-image: url(../images/pessoas-negocio-usando-internet.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   color: white;
   padding: 5rem 2rem;
   text-align: center;
@@ -42,6 +44,10 @@ body {
   font-weight: 500;
   font-family: 'Oswald';
   margin-top: 164px;
+}
+
+.overlay {
+  background: linear-gradient(90deg, #10133b, #1e2060);
 }
 
 .content-grid {
@@ -91,8 +97,9 @@ body {
 }
 
 .visual-element img {
-  width: 450px;
+  width: 500px;
   height: auto;
+  border-radius: 20px;
   -webkit-user-drag: none;
   z-index: 1;
 }

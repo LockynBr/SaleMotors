@@ -32,7 +32,10 @@ body {
 }
 
 .google-header {
-  background: linear-gradient(90deg, #10133b, #1e2060);
+  background-image: url(../images/pessoas-negocio-usando-internet.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  /*background: linear-gradient(90deg, #10133b, #1e2060);*/
   color: white;
   padding: 5rem 2rem;
   text-align: center;
@@ -90,7 +93,7 @@ body {
 }
 
 .visual-element img {
-  width: 180px;
+  width: 200px;
   max-width: 100%;
   height: auto;
   -webkit-user-drag: none;
