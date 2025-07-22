@@ -32,7 +32,7 @@ body {
 }
 
 .google-header {
-  background-image: url(../images/pessoas-negocio-usando-internet.jpg);
+  background-image: url(../images/pessoas-negocio-usando-internet-azul.jpg);
   background-attachment: fixed;
   background-size: cover;
   /*background: linear-gradient(90deg, #10133b, #1e2060);*/
@@ -165,6 +165,10 @@ body {
 
   .info-block h2 {
     text-align: left;
+  }
+
+  .visual-element img {
+    width: 200px;
   }
 
   .sobre-nos-icon-one {

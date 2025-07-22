@@ -34,7 +34,7 @@ body {
 }
 
 .sobre-header {
-  background-image: url(../images/pessoas-negocio-usando-internet.jpg);
+  background-image: url(../images/pessoas-negocio-usando-internet-azul.jpg);
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -44,10 +44,6 @@ body {
   font-weight: 500;
   font-family: 'Oswald';
   margin-top: 164px;
-}
-
-.overlay {
-  background: linear-gradient(90deg, #10133b, #1e2060);
 }
 
 .content-grid {
@@ -97,7 +93,7 @@ body {
 }
 
 .visual-element img {
-  width: 500px;
+  width: 480px;
   height: auto;
   border-radius: 20px;
   -webkit-user-drag: none;
@@ -173,7 +169,7 @@ body {
   }
 
   .visual-element img {
-    width: 400px;
+    width: 450px;
   }
 
   .sobre-nos-icon-one {
