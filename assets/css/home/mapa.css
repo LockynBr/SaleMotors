@@ -10,12 +10,12 @@
 }
 
 .title {
-  font-size: 36px;
-  font-family: 'Terminator';
-  letter-spacing: 2px;
+  font-family: 'Oswald';
+  font-size: 44px;
+  letter-spacing: -0.1px;
+  font-weight: bold;
   margin-bottom: 30px;
   color: #10133B;
-  font-weight: bold;
   position: relative; /* Necessário para que o ::before funcione */
   display: inline-block;
 }
@@ -30,7 +30,7 @@
   position: absolute;
   transform: translateX(35%);
   left: -10px;
-  top: 45%;
+  top: 60%;
   z-index: -1;
 }
 
@@ -134,14 +134,14 @@
   }
 
   .title {
-    font-size: 10vw;
+    font-size: 26px;
     text-align: center;  
     text-align: left;  
   }
 
   .title::before {
     left: -10px;
-    top: 15%;
+    top: 45%;
   }
 
   .regiao {
@@ -192,7 +192,7 @@
 
   .title::before {
     left: -10px;
-    top: 15%;
+    top: 50%;
   }
 
   .regiao {
@@ -236,13 +236,13 @@
   }
 
   .title {
-    font-size: 30px; 
+    font-size: 36px; 
     text-align: left;
   }
 
   .title::before {
     left: -10px;
-    top: 15%;
+    top: 55%;
   }
 
   .regiao {
@@ -286,13 +286,13 @@
   }
 
   .title {
-    font-size: 30px; 
+    font-size: 38px;
     text-align: left;
   }
 
   .title::before {
     left: -10px;
-    top: 19%;
+    top: 55%;
   }
 
   .regiao {
@@ -336,13 +336,13 @@
   }
 
   .title {
-    font-size: 30px; 
+    font-size: 38px;
     text-align: left;
   }
 
   .title::before {
     left: -10px;
-    top: 19%;
+    top: 55%;
   }
 
   .regiao {
@@ -386,13 +386,13 @@
   }
 
   .title {
-    font-size: 32px;
+    font-size: 40px;
     text-align: left;
   }
 
   .title::before {
     left: -10px;
-    top: 22%;
+    top: 55%;
   }
 
   .regiao {
@@ -426,13 +426,13 @@
   }
 
   .title {
-    font-size: 32px;
+    font-size: 40px;
     text-align: left;
   }
 
   .title::before {
     left: -10px;
-    top: 41%;
+    top: 60%;
   }
 
   .regiao {
@@ -467,13 +467,13 @@
   }
 
   .title {
-    font-size: 36px;
+    font-size: 40px;
     text-align: left;
   }
 
   .title::before {
     left: -10px;
-    top: 45%;
+    top: 60%;
   }
 
   .regiao {
