@@ -77,7 +77,7 @@
   font-family: var(--font-roboto);
   font-weight: 500;
   color: #10133B;
-  text-align: justify;
+  text-align: center;
 }
 
 .faixa-principal-box:hover {
@@ -252,7 +252,7 @@
     max-width: 120px;
   }
   .google-partner-result p {
-    max-width: 763px;
+    max-width: 785px;
     font-size: 18px;
   }
 }
