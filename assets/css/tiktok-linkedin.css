@@ -14,28 +14,24 @@ body {
 
 .background-icon {
   margin-bottom: -250px;
-    width: 10%;
-    height: auto;
-    -webkit-user-drag: none;
+  width: 10%;
+  height: auto;
+  -webkit-user-drag: none;
   }
 
 .tl-header {
   margin-top: 164px;
-  background: linear-gradient(90deg, #10133b, #1e2060);
+  background-image: url(../images/pessoas-negocio-usando-internet-azul.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  /*background: linear-gradient(90deg, #10133b, #1e2060);*/
   color: white;
   padding: 5rem 2rem;
   text-align: center;
-  font-size: 2.1rem;
-  font-weight: bold;
-  font-family: 'terminator';
-}
-
-.tl-header span {
   font-size: 3rem;
-  font-family: 'future-earth';
-  letter-spacing: 2px;
-  margin-left: 3px;
-  margin-right: -4px;
+  font-weight: 500;
+  font-family: 'Oswald';
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .sobre-nos-icon-one {
@@ -76,15 +72,12 @@ body {
 
 .info-block h2 {
   color: #10133B;
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-family: 'terminator';
-}
-
-.info-block h2 span {
-  font-family: 'future-earth';
   font-size: 2rem;
-  margin-left: 2px;
+  margin-bottom: 0.75rem;
+  font-family: 'Oswald';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
 }
 
 .info-block h2::before {
@@ -97,6 +90,8 @@ body {
   font-weight: 500;
   text-align: justify;
   color: #334155;
+  hyphens: auto;
+  text-justify: inter-word;
 }
 
 .visual-element {
@@ -106,7 +101,7 @@ body {
 }
 
 .visual-element img {
-  width: 330px;
+  width: 350px;
   max-width: 100%;
   height: auto;
   -webkit-user-drag: none;
@@ -127,9 +122,6 @@ body {
     font-size: 1.1rem;
     padding: 1.5rem 1rem;
   }
-  .tl-header span {
-    font-size: 1.5rem;
-  }
   .content-grid {
     grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
@@ -146,10 +138,6 @@ body {
   .info-block h2 {
     font-size: 1rem;
     text-align: left;
-  }
-
-  .info-block h2 span{
-    font-size: 1.4rem;
   }
 
   .info-block p {
@@ -187,17 +175,13 @@ body {
     padding: 2rem 1rem;
   }
 
-  .tl-header span {
-    font-size: 1.6rem;
-  }
-
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1.8rem 1.2rem;
     justify-items: center;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 160px;
     width: 100%;
   }
 
@@ -209,10 +193,6 @@ body {
   .info-block h2 {
     font-size: 1.1rem;
     text-align: left;
-  }
-
-  .info-block h2 span{
-    font-size: 1.5rem;
   }
 
   .info-block p {
@@ -256,12 +236,8 @@ body {
 /* ==================== CELULARES GRANDES (577px até 767px) ==================== */
 @media (min-width: 577px) and (max-width: 767px) {
   .tl-header {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     padding: 1.5rem 1rem;
-  }
-
-  .tl-header span{
-    font-size: 1.5rem;
   }
 
   .content-grid {
@@ -271,6 +247,7 @@ body {
     justify-items: center;
     text-align: center;
     margin-left: 0px;
+    margin-bottom: 50px;
     width: 100%;
   }
 
@@ -280,12 +257,8 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1rem;
-    text-align: left;
-  }
-  
-  .info-block h2 span{
     font-size: 1.4rem;
+    text-align: left;
   }
 
   .info-block p {
@@ -322,18 +295,14 @@ body {
 /* ==================== TABLETS (768px até 1024px) ==================== */
 @media (min-width: 768px) and (max-width: 1200px) {
   .tl-header {
-    font-size: 1.5rem;
-    padding: 2.5rem 2rem;
-  }
-
-  .tl-header span{
     font-size: 2rem;
+    padding: 2.5rem 2rem;
   }
 
   .content-grid {
     grid-template-columns: 1fr 1fr;
     padding: 2.5rem 50px;
-    margin-bottom: 50px;
+    margin-bottom: 130px;
     margin-left: 0px;
     width: 100%;
   }
@@ -378,12 +347,8 @@ body {
 /* ==================== NOTEBOOKS GRANDES (1201px até 1439px) ==================== */
 @media (min-width: 1201px) and (max-width: 1439px) {
   .tl-header {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     padding: 3rem 2.5rem;
-  }
-
-  .tl-header span {
-    font-size: 2.6rem;
   }
 
   .content-grid {
@@ -398,7 +363,7 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1..8rem;
+    font-size: 1.5rem;
   }
 
   .info-block p {
@@ -427,12 +392,8 @@ body {
 /* ==================== DESKTOPS PEQUENOS (1440px até 1599px) ==================== */
 @media (min-width: 1440px) and (max-width: 1599px) {
   .tl-header {
-    font-size: 2rem;
+    font-size: 2.8rem;
     padding: 3rem 3rem;
-  }
-
-  .tl-header span {
-  font-size: 2.7rem;
   }
 
   .content-grid {
@@ -444,11 +405,7 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1.4rem;
-  }
-
-  .info-block h2 span {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 
   .info-block p {

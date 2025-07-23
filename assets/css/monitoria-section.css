@@ -21,20 +21,17 @@ body {
 
 .monitoria-header {
   margin-top: 164px;
-  background: linear-gradient(90deg, #10133b, #1e2060);
+  background-image: url(../images/pessoas-negocio-usando-internet-azul.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  /*background: linear-gradient(90deg, #10133b, #1e2060);*/
   color: white;
   padding: 5rem 2rem;
   text-align: center;
-  font-size: 2.1rem;
-  font-weight: bold;
-  font-family: 'terminator';
-}
-
-.monitoria-header span {
   font-size: 3rem;
-  font-family: 'future-earth';
-  margin-left: 2px;
-  margin-right: -2px;
+  font-weight: 500;
+  font-family: 'Oswald';
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .sobre-nos-icon-one {
@@ -75,9 +72,12 @@ body {
 
 .info-block h2 {
   color: #10133B;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.75rem;
-  font-family: 'terminator';
+  font-family: 'Oswald';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
 }
 
 .info-block h2::before {
@@ -90,6 +90,8 @@ body {
   font-weight: 500;
   text-align: justify;
   color: #334155;
+  hyphens: auto;
+  text-justify: inter-word;
 }
 
 .visual-element {
@@ -100,7 +102,7 @@ body {
 }
 
 .visual-element img {
-  width: 180px;
+  width: 200px;
   max-width: 100%;
   height: auto;
   -webkit-user-drag: none;
@@ -122,14 +124,10 @@ body {
     padding: 1.5rem 1rem;
   }
 
-  .monitoria-header span {
-  font-size: 1.5rem;
-  }
-
   .content-grid {
     grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     margin-left: 0px;
     width: 100%;
   }
@@ -180,10 +178,6 @@ body {
     padding: 2rem 1rem;
   }
 
-  .monitoria-header span {
-  font-size: 1.7rem;
-  }
-
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -191,6 +185,7 @@ body {
     justify-items: center;
     text-align: center;
     margin-left: 0px;
+    margin-bottom: 50px;
     width: 100%;
   }
 
@@ -242,10 +237,6 @@ body {
     padding: 1.5rem 1rem;
   }
 
-  .monitoria-header span {
-  font-size: 1.5rem;
-  }
-
   .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -276,7 +267,7 @@ body {
     align-items: center;
     width: 100%;
     margin-right: 0 !important;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   .visual-element img {
@@ -301,18 +292,14 @@ body {
 /* ==================== TABLETS (768px até 1024px) ==================== */
 @media (min-width: 768px) and (max-width: 1200px) {
   .monitoria-header {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     padding: 2.5rem 2rem;
-  }
-
-  .monitoria-header span {
-  font-size: 2.2rem;
   }
 
   .content-grid {
     grid-template-columns: 1fr 1fr;
     padding: 2.5rem 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-left: 0px;
     width: 100%;
   }
@@ -323,7 +310,7 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: left;
   }
 
@@ -357,13 +344,9 @@ body {
 /* ==================== NOTEBOOKS GRANDES (1201px até 1439px) ==================== */
 @media (min-width: 1201px) and (max-width: 1439px) {
   .monitoria-header {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     padding: 3rem 2.5rem;
   }
-
-.monitoria-header span {
-  font-size: 2.6rem;
-}
 
   .content-grid {
     grid-template-columns: 1fr 1fr;
@@ -379,7 +362,7 @@ body {
   }
 
   .info-block h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .info-block p {
@@ -408,13 +391,9 @@ body {
 /* ==================== DESKTOPS PEQUENOS (1440px até 1599px) ==================== */
 @media (min-width: 1440px) and (max-width: 1699px) {
   .monitoria-header {
-    font-size: 2rem;
+    font-size: 2.8rem;
     padding: 3rem 3rem;
   }
-
-.monitoria-header span {
-  font-size: 2.8rem;
-}
 
   .content-grid {
     padding: 3rem 120px;

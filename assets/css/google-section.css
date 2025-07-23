@@ -32,7 +32,10 @@ body {
 }
 
 .google-header {
-  background: linear-gradient(90deg, #10133b, #1e2060);
+  background-image: url(../images/pessoas-negocio-usando-internet-azul.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  /*background: linear-gradient(90deg, #10133b, #1e2060);*/
   color: white;
   padding: 5rem 2rem;
   text-align: center;
@@ -41,14 +44,8 @@ body {
   font-family: 'Oswald';
   margin-top: 164px;
   text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 255, 255, 0.2);
 }
-
-/* .google-header span {
-  font-size: 3.5rem;
-  font-family: 'future-earth';
-  margin-left: 2px;
-  margin-right: -2px;
-} */
 
 .content-grid {
   padding: 3rem;
@@ -76,12 +73,6 @@ body {
   font-optical-sizing: auto;
 }
 
-/* .info-block h2 span{
-  font-family: 'future-earth';
-  font-size: 2rem;
-  margin-left: 2px;
-} */
-
 .info-block h2::before {
   content: none !important;
   display: none !important;
@@ -103,7 +94,7 @@ body {
 }
 
 .visual-element img {
-  width: 180px;
+  width: 200px;
   max-width: 100%;
   height: auto;
   -webkit-user-drag: none;
@@ -170,15 +161,15 @@ body {
 
 @media (max-width: 1540px) {
   .google-header {
-    font-size: 2rem;
-  }
-
-  .google-header span {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .info-block h2 {
     text-align: left;
+  }
+
+  .visual-element img {
+    width: 200px;
   }
 
   .sobre-nos-icon-one {
@@ -213,12 +204,8 @@ body {
 
 @media (max-width: 768px) {
   .google-header {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     padding: 2rem 1rem;
-  }
-
-  .google-header span {
-    font-size: 1.8rem;
   }
 
   .content-grid {
@@ -241,12 +228,8 @@ body {
   }
 
   .info-block h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: left;
-  }
-  
-  .info-block h2 span {
-    font-size: 1.7rem;
   }
 
   .info-block p {
@@ -259,16 +242,16 @@ body {
   .content-grid .visual-element {
     order: 2;
   }
+
+  .visual-element img {
+    width: 160px;
+  }
 }
 
 @media (max-width: 480px) {
   .google-header {
     font-size: 1.1rem;
     padding: 1.5rem 1rem;
-  }
-
-  .google-header span{
-    font-size: 1.6rem;
   }
 
   .sobre-nos-icon-two {
@@ -283,23 +266,16 @@ body {
     font-size: 1rem;
     text-align: left;
   }
-  .info-block h2 span {
-    font-size: 1.4rem;
-    letter-spacing: -1px;
-    margin-left: 1px;
-  }
+  
   .info-block p {
     font-size: 0.9rem;
   }
+  
   .visual-element img {
     width: 140px;
   }
+
   .feature-icon {
     width: 60px;
   }
-  .background-icon {
-    margin-bottom: -250px;
-      width: 30%;
-      height: auto;
-    }
 }
