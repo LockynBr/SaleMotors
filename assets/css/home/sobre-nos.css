@@ -27,7 +27,7 @@
   padding-left: 10px;
   margin-bottom: 10px;
   font-family: 'Oswald';
-  font-weight: 500;
+  font-weight: bold;
   font-size: 40px;
   letter-spacing: -0.1px;
 }
@@ -274,7 +274,7 @@
   }
 
   .sobre-nos-container .sobre-nos-text .title {
-    font-size: 33px;
+    font-size: 44px;
   }
 
   .sobre-nos-text p {

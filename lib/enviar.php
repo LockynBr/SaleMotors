@@ -64,8 +64,8 @@ try {
   $mail->CharSet    = 'utf8';
 
   // Remetente e destinatário
-  $mail->setFrom(SMTP_USER, 'Contato do Site');
-  $mail->addAddress(SMTP_USER, 'Contato do Site');
+  $mail->setFrom(SMTP_RECIVER, 'Contato do Site');
+  $mail->addAddress(SMTP_RECIVER, 'Contato do Site');
 
 
   // Corpo do e-mail
@@ -127,6 +127,7 @@ try {
 
   // Local de redirecionamento da página
   $hash = '#contato-dados';
-  header("Location: {$referer}{$hash}");
+  // header("Location: {$referer}{$hash}");
+  echo 'Erro ao enviar o e-mail: ' . $mail->ErrorInfo;
   exit();
 }
