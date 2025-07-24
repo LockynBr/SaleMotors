@@ -1,5 +1,12 @@
 @import url(../global/utilitario.css);
 
+.sobre-nos-bg{
+  background-size: 1000px;
+  background-image: url('../../images/deco/fundo.png');
+  background-position: center;
+  background-repeat: repeat;
+}
+
 .sobre-nos-container {
   margin-top: 100px;
   display: flex;
@@ -8,15 +15,23 @@
   align-items: center;
   position: relative;
   justify-content: center;
-  background-size: 1000px;
+  /* background-size: 1000px;
   background-image: url('../../images/deco/fundo.png');
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: repeat; */
   border-radius: 10px;
 }
 
+.teste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
 .sobre-nos-text {
-  max-width: 40%;
+  max-width: 60%;
   position: relative;
 }
 
@@ -84,7 +99,7 @@
 }
 
 .sobre-nos-image img {
-  width: 330px;
+  width: 400px;
 }
 
 .sobre-nos-icon-left {
