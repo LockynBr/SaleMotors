@@ -127,7 +127,7 @@ try {
 
   // Local de redirecionamento da página
   $hash = '#contato-dados';
-  // header("Location: {$referer}{$hash}");
+  header("Location: {$referer}{$hash}");
   echo 'Erro ao enviar o e-mail: ' . $mail->ErrorInfo;
   exit();
 }

@@ -42,7 +42,7 @@ export default function initContato() {
     }
 
     if (valido) {
-      alert('Formulário enviado com sucesso!');
+      // alert('Formulário enviado com sucesso!');
       form.submit();
     }
   });
