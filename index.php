@@ -9,6 +9,9 @@
   <meta property="og:title" content="Sale Motors">
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <meta name="description" content="A Sale Motors esta focada em aumentar vendas através da analise de campanhas no Google ADS e interação com seu site com o Google Analytics">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   
 
   <title>Sale Motors</title>

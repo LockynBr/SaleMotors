@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Aumente suas conversões com campanhas estratégicas no Google Ads. Alcance clientes no momento certo e acompanhe seus resultados com relatórios inteligentes." />
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <title>Sale Motors | Sobre</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/sobre.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
 </head>
 
 <body class="internal">
