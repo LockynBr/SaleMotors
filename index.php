@@ -51,14 +51,14 @@
         <ul data-menu="list" id="menu" class="menu-list">
           <img id="menu-img-mb" src="assets/images/icones/logo-sm.svg" alt="Logo Sale Motors" />
           <li><a href="./">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="sobre.php">Sobre</a></li>
           <li data-dropdown class="menu-no-hover">
             <a href="#">Serviços</a>
             <ul class="menu-dropdown">
-              <li><a href="campanhas-google.html">Campanhas de Google</a></li>
-              <li><a href="campanhas-meta.html">Campanhas de Meta</a></li>
-              <li><a href="tiktok-linkedin.html">LinkedIn e TikTok</a></li>
-              <li><a href="monitoria.html">Monitoria</a></li>
+              <li><a href="campanhas-google.php">Campanhas de Google</a></li>
+              <li><a href="campanhas-meta.php">Campanhas de Meta</a></li>
+              <li><a href="tiktok-linkedin.php">LinkedIn e TikTok</a></li>
+              <li><a href="monitoria.php">Monitoria</a></li>
             </ul>
           </li>
           <li><a href="#contato">Contato</a></li>
@@ -274,7 +274,7 @@
   <div id="contato" class="contato-container">
     <div class="contato-box">
 
-      <section class="contato-dados" aria-label="Endereço">
+      <section id="contato-dados" class="contato-dados" aria-label="Endereço">
         <h2>Contato - Sale Motors</h2>
         <div class="contato-endereco">
           <p> R. Agenor Lopes, 277 - Sala 1101 e 1102 - Boa Viagem, Recife - PE, 51021-110</p>
@@ -316,8 +316,19 @@
             <label for="mensagem">Mensagem</label>
             <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
           </div>
-          <button type="submit" class="botao col-2">Enviar Mensagem</button>
+          <button type="submit" name="enviar" class="botao col-2">Enviar Mensagem</button>
         </form>
+        <?php if (isset($_GET['status'])): ?>
+          <?php if ($_GET['status'] === 'sucesso'): ?>
+            <div class="mensagem sucesso">
+              ✅ E-mail enviado com sucesso!
+            </div>
+          <?php elseif ($_GET['status'] === 'erro'): ?>
+            <div class="mensagem erro">
+              ❌ Ocorreu um erro ao enviar o e-mail. Tente novamente.
+            </div>
+          <?php endif; ?>
+        <?php endif; ?>
       </section>
     </div>
   </div>
@@ -380,10 +391,16 @@
     <img class="whatsapp-flutuante" src="assets/images/icones/icon-wpp.svg" alt="Whatsapp" width="200" height="200">
   </a>
 
-
-
-
   <script type="module" src="assets/js/script.js"></script>
+  <script>
+    setTimeout(() => {
+      const msg = document.querySelector('.mensagem');
+      if (msg) {
+        msg.classList.add('ocultar');
+        setTimeout(() => msg.remove(), 500);
+      }
+    }, 5000);
+  </script>
 
 </body>
 
