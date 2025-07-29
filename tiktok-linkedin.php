@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <title>Sale Motors | LinkedIn e TikTok ADS</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/tiktok-linkedin.css" />
+  <link rel="stylesheet" href="assets/css/paginas/tiktok-linkedin.css" />
 </head>
 
 <body class="internal">

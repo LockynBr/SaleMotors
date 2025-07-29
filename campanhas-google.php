@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <title>Sale Motors | Campanhas de Google</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/google-section.css" />
+  <link rel="stylesheet" href="assets/css/paginas/google-section.css" />
 </head>
 
 <body class="internal">

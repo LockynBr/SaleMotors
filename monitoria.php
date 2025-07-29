@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <title>Sale Motors | Monitoria</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/monitoria-section.css" />
+  <link rel="stylesheet" href="assets/css/paginas/monitoria-section.css" />
 </head>
 
 <body class="internal">

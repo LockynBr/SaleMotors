@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <title>Sale Motors | Sobre</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/sobre.css" />
+  <link rel="stylesheet" href="assets/css/paginas/sobre.css" />
 </head>
 
 <body class="internal">

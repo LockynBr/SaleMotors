@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <title>Sale Motors | Campanhas de Meta</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/meta-section.css" />
+  <link rel="stylesheet" href="assets/css/paginas/meta-section.css" />
 </head>
 
 <body class="internal">
