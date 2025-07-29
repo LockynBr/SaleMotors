@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Sale Motors">
   <meta property="og:title" content="Sale Motors">
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <meta name="description" content="A Sale Motors esta focada em aumentar vendas através da analise de campanhas no Google ADS e interação com seu site com o Google Analytics">
+  
+
   <title>Sale Motors</title>
 </head>
 <noscript>
