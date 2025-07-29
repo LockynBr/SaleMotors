@@ -14,10 +14,3 @@
 @import "./home/card.css";
 @import "./home/videomain.css";
 @import "./home/funil.css";
-
-/* PAGINAS */
-@import "./paginas/google-section.css";
-@import "./paginas/meta-section.css";
-@import "./paginas/monitoria-section.css";
-@import "./paginas/sobre.css";
-@import "./paginas/tiktok-linkedin.css";
