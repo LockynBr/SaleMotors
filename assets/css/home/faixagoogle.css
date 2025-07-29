@@ -71,7 +71,7 @@
 }
 
 .google-partner-result p {
-  max-width: 763px;
+  max-width: 900px;
   font-size: 18px;
   padding-top: 60px;
   font-family: var(--font-roboto);
@@ -142,8 +142,9 @@
     max-width: 70px;
   }
   .google-partner-result p {
-    max-width: 300px;
-    font-size: 15px;
+    max-width: 500px;
+    font-size: 13px;
+    
   }
 }
 
@@ -161,8 +162,8 @@
     max-width: 85px;
   }
   .google-partner-result p {
-    max-width: 320px;
-    font-size: 15px;
+    max-width: 500px;
+    font-size: 13px;
   }
 }
 
@@ -180,8 +181,9 @@
     max-width: 80px;
   }
   .google-partner-result p {
-    max-width: 310px;
+    max-width: 500px;
     font-size: 15px;
+  
   }
 }
 
@@ -198,7 +200,7 @@
     max-width: 90px;
   }
   .google-partner-result p {
-    max-width: 550px;
+    max-width: 650px;
     font-size: 16px;
   }
 }
@@ -216,7 +218,7 @@
     max-width: 100px;
   }
   .google-partner-result p {
-    max-width: 620px;
+    max-width: 900px;
     font-size: 16px;
   }
 }
@@ -234,7 +236,7 @@
     max-width: 110px;
   }
   .google-partner-result p {
-    max-width: 640px;
+    max-width: 900px;
     font-size: 17px;
   }
 }
@@ -252,7 +254,7 @@
     max-width: 120px;
   }
   .google-partner-result p {
-    max-width: 785px;
+    max-width: 900px;
     font-size: 18px;
   }
 }

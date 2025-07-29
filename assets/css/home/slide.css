@@ -1,6 +1,7 @@
 .slide-wrapper {
     overflow: hidden;
     margin-top: 64px;
+    touch-action: pan-y;
   }
   
   .slide {
