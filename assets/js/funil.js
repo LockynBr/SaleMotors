@@ -1,9 +1,8 @@
 export default function initFunil() {
   const resultados = [
     {
-      img: 'assets/images/icones/funil-sm.png',
-      texto:
-        'Desenvolvemos planos de tráfego digital sob medida para o seu negócio, focados nas plataformas mais relevantes para seu público. Analisamos dados e comportamentos para definir as melhores táticas que maximizam alcance e conversão.',
+      img: 'assets/images/icones/funil-sm-centro.png',
+      texto: '',
     },
     {
       img: 'assets/images/icones/execucaoeotimazacaoemplataformas-alt.png',
@@ -13,7 +12,7 @@ export default function initFunil() {
     {
       img: 'assets/images/icones/monitoria-alt.png',
       texto:
-        'Fazemos um acompanhamento contínuo de todas as ações implementadas nas suas plataformas. Isso inclui análise de métricas, identificação de gargalos, oportunidades de crescimento e ajustes estratégicos em tempo real. Nossa monitoria garante que você tenha total controle do que está funcionando — e o que precisa ser melhorado — para manter o desempenho sempre em alta.',
+        'Fazemos um acompanhamento contínuo de todas as ações implementadas nas suas plataformas. Isso inclui análise de métricas, identificação de gargalos, oportunidades de crescimento e ajustes estratégicos em tempo real. Nossa monitoria garante que você tenha total controle do que está funcionando e o que precisa ser melhorado para manter o desempenho sempre em alta.',
     },
     {
       img: 'assets/images/icones/equipecertificada-alt.png',
@@ -43,7 +42,14 @@ export default function initFunil() {
       button.style.setProperty('--bg-cor', button.dataset.bg);
 
       resultImg.src = resultados[index].img;
-      resultText.textContent = resultados[index].texto;
+      resultText.innerHTML = resultados[index].texto;
+
+      resultImg.classList.remove('primeira-imagem');
+      if (index === 0) {
+        resultImg.classList.add('primeira-imagem');
+      }
+
+      resultText.style.display = index === 0 ? 'none' : 'block';
     }
 
     buttons.forEach((button, index) => {
