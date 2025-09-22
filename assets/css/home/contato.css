@@ -157,6 +157,10 @@
     box-shadow: 0 0 0 2px #7d98bb;
 }
 
+.g-recaptcha {
+    grid-column: span 2;
+}
+
 .mensagem {
     font-family: var(--font-roboto);
     padding: 12px 16px;

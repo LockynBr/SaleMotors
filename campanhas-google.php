@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&family=Oswald:wght@500;700&family=Poppins:wght@700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Sale Motors | Campanhas de Google</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/paginas/meta-section.css" />
 </head>
@@ -198,18 +199,19 @@
             <label for="mensagem">Mensagem</label>
             <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
           </div>
+          <div class="g-recaptcha" data-sitekey="6LeusdErAAAAAOWJCf5Zt--v5OxlKLodAXDkPTbe"></div>
           <button type="submit" name="enviar" class="botao col-2">Enviar Mensagem</button>
         </form>
         <?php if (isset($_GET['status'])): ?>
-          <?php if ($_GET['status'] === 'sucesso'): ?>
-            <div class="mensagem sucesso">
-              ✅ E-mail enviado com sucesso!
-            </div>
-          <?php elseif ($_GET['status'] === 'erro'): ?>
-            <div class="mensagem erro">
-              ❌ Ocorreu um erro ao enviar o e-mail. Tente novamente.
-            </div>
-          <?php endif; ?>
+        <?php if ($_GET['status'] === 'sucesso'): ?>
+        <div class="mensagem sucesso">
+          ✅ E-mail enviado com sucesso!
+        </div>
+        <?php elseif ($_GET['status'] === 'erro'): ?>
+        <div class="mensagem erro">
+          ❌ Ocorreu um erro ao enviar o e-mail. Tente novamente.
+        </div>
+        <?php endif; ?>
         <?php endif; ?>
       </section>
     </div>
@@ -271,13 +273,13 @@
 
   <script type="module" src="assets/js/script.js"></script>
   <script>
-    setTimeout(() => {
-      const msg = document.querySelector('.mensagem');
-      if (msg) {
-        msg.classList.add('ocultar');
-        setTimeout(() => msg.remove(), 500);
-      }
-    }, 5000);
+  setTimeout(() => {
+    const msg = document.querySelector('.mensagem');
+    if (msg) {
+      msg.classList.add('ocultar');
+      setTimeout(() => msg.remove(), 500);
+    }
+  }, 5000);
   </script>
 </body>
 

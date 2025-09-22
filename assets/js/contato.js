@@ -11,11 +11,12 @@ export default function initContato() {
     const email = document.getElementById('email');
     const mensagem = document.getElementById('mensagem');
 
-    const campos = [nome, telefone, email, mensagem];
+    // Remove mensagens de erro antigas
     document.querySelectorAll('.erro-msg').forEach((el) => el.remove());
 
     let valido = true;
 
+    // Validação dos campos
     if (nome.value.trim().length < 3) {
       mostrarErro(nome, 'Nome muito curto.');
       valido = false;
@@ -34,15 +35,17 @@ export default function initContato() {
     }
 
     if (mensagem.value.trim().length < 10) {
-      mostrarErro(
-        mensagem,
-        'Escreva uma mensagem com pelo menos 10 caracteres.',
-      );
+      mostrarErro(mensagem, 'Escreva uma mensagem com pelo menos 10 caracteres.');
       valido = false;
     }
 
+    // Validação do reCAPTCHA (sem mensagem)
+    if (typeof grecaptcha !== "undefined" && grecaptcha.getResponse() === '') {
+      valido = false; // apenas bloqueia o envio
+    }
+
+    // Se tudo estiver válido, envia o formulário
     if (valido) {
-      // alert('Formulário enviado com sucesso!');
       form.submit();
     }
   });

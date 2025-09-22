@@ -15,6 +15,39 @@ use PHPMailer\PHPMailer\Exception;
 
 $post = $_POST;
 
+// 🔒 Verificação do reCAPTCHA
+$recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+$secretKey = '6LeusdErAAAAACzZczrhNsulMvrCRDxYbOjRZ8ig'; // 👉 sua chave secreta (não a sitekey!)
+
+$verify = curl_init();
+curl_setopt_array($verify, [
+    CURLOPT_URL => "https://www.google.com/recaptcha/api/siteverify",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => [
+        'secret' => $secretKey,
+        'response' => $recaptchaResponse
+    ]
+]);
+
+$response = curl_exec($verify);
+curl_close($verify);
+
+$responseKeys = json_decode($response, true);
+
+// Se não for válido, já bloqueia o envio
+if (!($responseKeys['success'] ?? false)) {
+  $referer = $_SERVER['HTTP_REFERER'] ?? '/';
+  $url_parts = parse_url($referer);
+  parse_str($url_parts['query'] ?? '', $query_params);
+  unset($query_params['status']);
+  $query_params['status'] = 'erro';
+  $new_query = http_build_query($query_params);
+  $referer = $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $new_query;
+  header("Location: {$referer}#contato-dados");
+  exit();
+}
+
 //Recuperando o valor do form
 $nome     = $post['nome'] ?? '';
 $telefone = formatarTelefone($post['telefone'] ?? '');
@@ -67,15 +100,14 @@ try {
   $mail->setFrom(SMTP_RECIVER, 'Contato do Site');
   $mail->addAddress(SMTP_RECIVER, 'Contato do Site');
 
-
   // Corpo do e-mail
   $mail->isHTML(true);
   $mail->Subject = 'Novo contato de ' . htmlspecialchars($nome);
   $mail->Body = "
-  <table width='100%' cellpadding='0' cellspacing='0' border='0' style='font-family: Arial, sans-serif; background-color: #f9f9f9; padding:   20px;'>
+  <table width='100%' cellpadding='0' cellspacing='0' border='0' style='font-family: Arial, sans-serif; background-color: #f9f9f9; padding:20px;'>
     <tr>
       <td align='center'>
-        <table width='600' cellpadding='0' cellspacing='0' border='0' style='background-color: #ffffff; padding: 20px; border: 1px solid  #dddddd;'>
+        <table width='600' cellpadding='0' cellspacing='0' border='0' style='background-color: #ffffff; padding: 20px; border: 1px solid #dddddd;'>
           <tr>
             <td align='center' style='padding-bottom: 20px;'>
               <h2 style='margin: 0; color: #333333;'>Nova mensagem de contato do site</h2>
@@ -104,7 +136,6 @@ try {
   parse_str($url_parts['query'] ?? '', $query_params);
 
   unset($query_params['status']);
-
   $query_params['status'] = 'sucesso';
   $new_query = http_build_query($query_params);
   $referer = $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $new_query;
@@ -120,7 +151,6 @@ try {
   parse_str($url_parts['query'] ?? '', $query_params);
 
   unset($query_params['status']);
-
   $query_params['status'] = 'erro';
   $new_query = http_build_query($query_params);
   $referer = $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $new_query;
