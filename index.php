@@ -323,7 +323,7 @@
             <label for="mensagem">Mensagem</label>
             <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
           </div>
-          <div class="g-recaptcha col-2" data-sitekey="6LeusdErAAAAAOWJCf5Zt--v5OxlKLodAXDkPTbe"></div>
+          <div class="g-recaptcha col-2" data-sitekey="6LcWCNIrAAAAABm8u7Ux_w8gri-p0fipM_2uBfh4"></div>
           <button type="submit" name="enviar" class="botao col-2">Enviar Mensagem</button>
         </form>
         <?php if (isset($_GET['status'])): ?>

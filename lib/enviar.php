@@ -17,7 +17,7 @@ $post = $_POST;
 
 // 🔒 Verificação do reCAPTCHA
 $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
-$secretKey = '6LeusdErAAAAACzZczrhNsulMvrCRDxYbOjRZ8ig'; // 👉 sua chave secreta (não a sitekey!)
+$secretKey = RECAPTCHA_SITE_KEY;
 
 $verify = curl_init();
 curl_setopt_array($verify, [
